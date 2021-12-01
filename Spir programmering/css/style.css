@@ -455,6 +455,183 @@ padding-top: 2em;
     font-size: 16px;
 }
 
+
+/* ------------- testemonials slider start ----------*/
+
+.testimonial_body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+.testimonial_container {
+    position: relative;
+    width: 800px;
+    min-width: 320px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+}
+
+.testimonial_wrapper {
+    width: 400%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+
+
+
+}
+
+.testimonial_card {
+    width: 100%;
+    min-height: 100%;
+    background: rgb(173, 170, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0 33px;
+
+}
+
+.testimonial_image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.personimg {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.person_navn {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    padding: 5px 20px;
+    background: cornsilk;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+
+.testimonial_text_container {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-top: 40px;
+
+
+
+}
+
+
+.testimonial_text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+
+
+}
+
+
+.testimonial_indicators {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transform: translateX(-100%);
+}
+
+.testimonial_indicators button {
+    background: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #488484;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.5s;
+    justify-content: center;
+
+
+}
+
+
+
+@media (max-width: 800px) {
+    .testimonial_container {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .testimonial_card {
+        flex-direction: column;
+
+
+    }
+
+    .testimonial_image {
+        width: 100%;
+
+    }
+
+
+
+    .testimonial_text_container {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+
+    }
+
+
+    .testimonial_text {
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 0px;
+        width: 100%;
+
+
+    }
+
+    .testimonial_indicators {
+        width: 100%;
+        margin-left: 60%;
+    }
+
+    .testimonial_indicators button {
+
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        transition: 0.5s;
+        margin-left: 0;
+        margin-right: 40px;
+    }
+}
+
+
+/* ------------- testemonials slider slut ----------*/
+
+
 /*---------------------------------Footer------------------------*/
 
 footer {
