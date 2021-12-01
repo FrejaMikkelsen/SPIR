@@ -43,7 +43,7 @@ let currentTestimonial = 0; //default 0
 indicators.forEach((item, i) => {
     item.addEventListener('click',() => {
         indicators [currentTestimonial].classList.remove('active');
-        wrapper.style.marginLeft = `${-101 * i}%`; //bestemmer hvor langt slideren 'rykker' sig hver gang der klikkes
+        wrapper.style.marginLeft = `${-99 * i}%`; //bestemmer hvor langt slideren 'rykker' sig hver gang der klikkes
         item.classList.add('active');
         currentTestimonial = i;
     })
