@@ -33,3 +33,20 @@ $( document ).ready(function() {
     });
 
 });
+
+// testimonail slider start 
+const wrapper = document.querySelector('.testimonial_wrapper'); //vælger alle elementer inde i .testimonail_wrapper
+const indicators = [...document.querySelectorAll('.testimonial_indicators button')];
+
+let currentTestimonial = 0; //default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click',() => {
+        indicators [currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `${-101 * i}%`; //bestemmer hvor langt slideren 'rykker' sig hver gang der klikkes
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+
+// testimonail slider slut 
