@@ -68,7 +68,7 @@
 }
 
 .menu {
-    background: white;
+    background: #ded9ca;
     display: flex;
     align-items: center;
     position: fixed;
@@ -78,6 +78,7 @@
     bottom: 0;
     transition: .1s;
     visibility: hidden;
+    
 }
 
 .menu.is-active {
@@ -89,13 +90,16 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    
 }
 
 .menu__list2 {
     display: flex;
     flex-direction: column;
     list-style: none;
+  
 }
+
 
 
 .menu__item:not(:last-child) {
@@ -112,7 +116,7 @@
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
-    color: black;
+    color: #158059;
     text-decoration: none;
 }
 
@@ -122,7 +126,7 @@
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: black;
+    color: #158059;
     text-decoration: none;
     padding-left: 50px;
     padding-top: 1em;
@@ -252,7 +256,7 @@
     background: #4f504f;
 }
 
-/*--------------bannerbillede---------------*/
+/*--------------bannerbillede forside ---------------*/
 .forside-banner {
     background: url(../images/forside-banner.jpg);
     background-size: 100%;
@@ -265,6 +269,23 @@
     position: relative;
 }
 
+
+/*--------------bannerbillede om os ---------------*/
+.omos-banner {
+    background: url(../images/omos-banner.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+}
+
+
+/*------------------------logo ----------------------------*/
+
 .logo img {
     width: 11%;
     padding-left: 2%;
@@ -275,7 +296,7 @@
 }
 
 
-/*------------------------main----------------------------*/
+/*------------------------ main forside ----------------------------*/
 .forside-section1 {
     background-color: #158059;
     width: 100%;
@@ -456,15 +477,316 @@ padding-top: 2em;
 }
 
 
-/* ------------- testemonials slider start ----------*/
 
+
+
+/*------------------------ om os main ----------------------------*/
+.omos-section1 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #fff;
+}
+
+.omos-s1-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s1-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+}
+
+.omos-s1-tekst a {
+    color: #fff;
+    font-weight: 500;
+}
+/*section2*/
+
+.omos-section2 {
+    background-color: #002437;
+    width: 100%;
+}
+
+.omos-s2-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s2-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s2-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.omos-s2-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s2-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section3 er blevet til section8*/
+
+
+/*section4*/
+
+.omos-section4 {
+    background-color: #ded9ca;
+    width: 100%;
+}
+
+.omos-s4-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s4-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s4-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #158059;
+}
+
+.omos-s4-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s4-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+
+/*section5*/
+
+.omos-section5 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s5-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s5-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s5-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.omos-s5-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s5-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section6*/
+
+.omos-section6 {
+    background-color: #ded9ca;
+    width: 100%;
+}
+
+.omos-s6-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s6-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s6-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #158059;
+}
+
+.omos-s6-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s6-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+
+/*section7*/
+
+.omos-section7 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s7-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s7-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s7-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.omos-s7-tekst h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s7-tekst p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section8*/
+
+.omos-section8 {
+    background-color: #158059;
+    width: 100%;
+}
+
+.omos-s8-content {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.omos-s8-content h2{
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.omos-s8-content p{
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+
+
+/*-----------------------testimonail slider start -----------------*/
 .testimonial_body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+  background-color: #ded9ca;
 
 }
 
@@ -485,14 +807,12 @@ padding-top: 2em;
     justify-content: center;
     transition: 1s;
 
-
-
 }
 
 .testimonial_card {
     width: 100%;
     min-height: 100%;
-    background: rgb(173, 170, 161);
+    background: #ded9ca;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,7 +831,6 @@ padding-top: 2em;
 .personimg {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -520,9 +839,10 @@ padding-top: 2em;
     bottom: 5px;
     right: 10px;
     padding: 5px 20px;
-    background: cornsilk;
+    background: #158059;
     text-transform: capitalize;
     font-size: 14px;
+    color: #fff;
 }
 
 
@@ -534,8 +854,6 @@ padding-top: 2em;
     position: relative;
     padding-top: 40px;
 
-
-
 }
 
 
@@ -543,6 +861,7 @@ padding-top: 2em;
     font-size: 20px;
     line-height: 30px;
     margin-top: 30px;
+    color: #90ad9e;
 
 
 }
@@ -561,7 +880,7 @@ padding-top: 2em;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #488484;
+    border: 2px solid #158059;
     cursor: pointer;
     margin-left: 20px;
     transition: 0.5s;
@@ -573,6 +892,16 @@ padding-top: 2em;
 
 
 @media (max-width: 800px) {
+
+    .testimonial_body {
+        width: 100%;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+    }
+    
+
     .testimonial_container {
         width: 100%;
         justify-content: center;
@@ -614,7 +943,7 @@ padding-top: 2em;
 
     .testimonial_indicators {
         width: 100%;
-        margin-left: 60%;
+        margin-left: 57%;
     }
 
     .testimonial_indicators button {
@@ -628,9 +957,7 @@ padding-top: 2em;
     }
 }
 
-
-/* ------------- testemonials slider slut ----------*/
-
+/*-----------------------testimonail slider slut -----------------*/
 
 /*---------------------------------Footer------------------------*/
 
