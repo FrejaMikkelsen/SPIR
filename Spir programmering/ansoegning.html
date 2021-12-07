@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansøgning til præsentation - SPIR aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header class="ansoegning-banner">
+        <div class="logo"><a href="index.html"><img src="images/spir-logo.png" alt="Spir logo"></a></div>
+        <a href="javascript:;" title="" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+
+        <div class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="events.html" title="" class="menu__link">Events</a>
+                    <ul class="menu__list2">
+                        <li class="menu__item2"><a href="events.html" title="" class="menu__link2">Næste event</a></li>
+                        <li class="menu__item2"><a href="frivillig.html" title="" class="menu__link2">Bliv frivillig</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <a href="ansoegning.html" title="" class="menu__link">Ansøg</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">InSPIRation</a>
+                </li>
+                <li class="menu__item">
+                    <a href="omos.html" title="" class="menu__link">Om os</a>
+                    <ul class="menu__list2">
+                        <li class="menu__item2"><a href="omos.html" title="" class="menu__link2">Hvem er vi?</a></li>
+                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Sponsorer</a></li>
+                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Spørgsmål og svar</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="ansoegning-section1">
+            <div class="ansoegning-s1-flex">
+                <div class="ansoegning-s1-content">
+                    <div class="ansoegning-s1-tekst">
+                        <h2>Har du en idé, som du brænder for?</h2>
+                        <p>Kunne du tænke dig at præsentere din idé til næste SPIR event? Så har du mulighed for at ansøge her.
+                        <br> Deadline for ansøgning til vores næste SPIR event er d. 17. December  kl. 12.00
+                        <br>
+                        <br>
+                        Det eneste krav for dit initiativ er, at du/I har en <b>social, kulturel</b> eller <b>grøn</b> profil. 
+                        <br>
+                      Vær opmærksom på, at det er ikke muligt at medbringe et fancy power point show, og vi behøver heller ikke se din forretningsplan. SPIR er for alle, og alle skal have muligheden for at være med – uanset baggrund. 
+                        
+                      <br>
+                      <br>
+                        Du har 4 minutter til at præsentere din idé, og du vil herefter modtage op til 4 spørgsmål fra salen. Forhåbentlig får netop din idé flest stemmer, og du kan gå hjem med aftenens donationer.
+                        <br>
+                        <br>
+                        Udfyld skemaet og tryk på ansøg – vi glæder os til at læse din ansøgning! </p>
+
+                    </div>
+                    <!--ansoegning-s1-tekst-->
+                    <div class="ansoegning-s1-billede">
+                        <img src="images/spir-event-pitch.png">
+                    </div>
+                    <!--ansoegning-s1-billede-->
+                </div>
+                <!--ansoegning-s1-content-->
+            </div>
+            <!--ansoegning-s1-flex-->
+        </section>
+        <!--ansoegning-section1-->
+
+        <section class="ansoegning-section2">
+            <div class="ansoegning-s2-flex">
+                <div class="ansoegning-s2-content">
+                    <div class="ansoegning-s2-tekst">
+                        <h2>Udfyld formularen her</h2>
+                        <p> Hvis du har nogle spørgsmål til formularen, så tøv ikke med at kontakte os, så hjælper vi dig igennem. 
+                        </p>
+                        <form class="ansoegning-formular" id="ansoegning-formular" action="kvittering-ansoegning.html">
+                            <div class="ansoegning-formular-navn">
+                                <br>
+                                
+                                <label>Fulde navn</label>
+                                
+                                <input type="text" id="navn" placeholder="Fulde navn" required>  
+                              
+                                <label>Mobil</label>
+                                <input type="tel" id="mobil" placeholder="Mobil" required>
+                                
+                            </div>
+                                <br>
+                         
+                            <div class="ansoegning-formular-kontakt">
+                                <label>Email</label>
+                                <input type="mail" id="mail" placeholder="Email" required>
+                                
+                                <label>Titel på din idé</label>
+                                <input type="text" id="titel1" placeholder="Titel" required>
+                                
+                            </div>
+                            <div class="ansoegning-formular-info1">
+
+
+                                <label>Fortæl os lidt om din idé</label>
+                                <textarea rows="2" cols="25" class="infoomdig" id="info1" placeholder="" required> </textarea>
+                            </div>
+
+                            <div class="ansoegning-formular-info2">
+                                <label>Hvem gør projektet en forskel for?</label>
+                                <textarea rows="2" cols="25" class="infoomdig" id="info2" placeholder="" required> </textarea>
+                                
+                            </div>
+
+
+                            <div class="ansoegning-formular-info3">
+                                <label>Hvad skal pengene helt konktret bruges til, hvis du vinder?*</label>
+                                <textarea rows="2" cols="25" class="infoomdig" id="info3"  placeholder="" required> </textarea>
+                                <p>*Vi ved ikke på forhånd, hvor mange penge, der doneres af aftenens gæster, men forvent at kunne vinde ca. 4.000-6.000 kroner. Vær så specifik som muligt ift. hvad det er for nogle udgifter, pengene skal bruges til.</p>
+                            </div>
+                            <br>
+                            <br>
+
+
+                            <div class="ansoegning-formular-info4">
+                                <label>Her kan du indsætte links til hjemmeside, instagram o.l</label>
+                                <textarea rows="2" cols="25" class="infoomdig" id="info4"  placeholder="Skriv lidt om dig selv" required> </textarea>
+                               
+
+                                <label>Hvor har du hørt om SPIR?*</label>
+                                <input type="text" id="spir" placeholder="På instagram, gennem venner?" required>
+                                <div class="cover"></div> <p>*Vi er nysgerrige på, hvordan vi lykkes med at nå ud med budskabet om SPIR og tiltrække ildsjæle med gode idéer. Derfor vil vi rigtig gerne vide, hvordan du mon kender til os?</p>
+                            </div>
+
+                     
+                        <div class="ansoegning-formular-tekst">
+                            <p>Er du indforstået med at såfremt du vinder, skal du komme tilbage til næste SPIR event og fortælle om dine fremskridt?</p>
+                            
+                           <input type="checkbox" id="checkboxansoegning1" class="ansoegning-checkbox" placeholder="Ja">
+                           <label>Ja</label> 
+                            <br>
+                        </div>
+                            <div class="cookie-consent">
+                            <p id="cookie-consent-tekst">Når du ansøger om at blive frivillig,
+                                godkender du samtidig at SPIR aarhus
+                                gemmer dine oplysninger i 6 mdr i hht.
+                                GDPR lovgivningen. Du giver samtidig
+
+                                lov til at SPIR må kontakte dig i forbind-
+                                else med events.
+
+                                Efter de 6 mdr. bliver dine
+                                oplysninger slettet</p>
+                                <br>
+                                <label>Accepter</label>
+                            <input type="checkbox" id="accepter" class="cookie-checkbox" placeholder="" required>
+                           
+                        </div>
+                        
+                        <div class="læs-mere-knap">
+                            <button type="submit" class="send-tilmelding-a">Send din tilmelding</button>
+                        </div>
+                        <!--Læs-mere-knap-->
+
+                    </form>
+                    </div>
+                  
+                
+                </div>
+                <!--ansoegning-s2-content-->
+            </div>
+            <!--ansoegning-s2-flex-->
+        </section>
+        <!--ansoegning-section2-->
+
+
+    </main>
+
+
+
+    <!--Chatbot-->
+
+
+    <div class="cc-contactpop fixed">
+        <h3>Kontakt os</h3>
+        <div class="renseignement">
+            <i class="fa fa-times"></i>
+            <p>Har du et spørgsmål som du ikke kan finde svar på? Skriv en besked til os her - vi svarer hurtigst muligt
+            </p>
+        </div>
+        <form method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Navn" />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" placeholder="Mobil" />
+            </div>
+            <br>
+            <div class="form-group">
+                <textarea id="message" type="text" placeholder="Skriv her"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/spir-logo.png" alt="bold logo footer">
+                <div class="socials">
+                    <a href="https://www.facebook.com/bolddrinksdk" target="_blank"><img src="images/facebookicon.png"
+                            alt="facebookicon"></a>
+                    <a href="https://www.instagram.com/bolddrinks/?hl=da" target="_blank"><img
+                            src="images/instagramicon.png" alt="instagramicon"></a>
+                </div>
+            </div> <!-- end of Footer-left-->
+
+            <div class="footer-flex">
+                <h2>EVENTS</h2>
+
+                <ul class="box">
+                    <li><a href="events.html">Næste event</a></li>
+                    <li><a href="frivillig.html">Bliv event-frivillig</a></li>
+                    <li><a href="ansoegning.html">Pitch-ansøgning</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-flex">
+
+
+                <h2>OM OS</h2>
+
+                <ul class="box">
+                    <li><a href="produkter.html">InSPIRation</a></li>
+                    <li><a href="omos.html">Hvem er vi?</a></li>
+                    <li><a href="omos.html">Vores værdier</a></li>
+                    <li><a href="#">Vores sponsorer</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex">
+
+
+                <h2>INFO</h2>
+
+                <ul class="box">
+                    <li><a href="#">Spørgsmål og svar</a></li>
+                    <li><a href="cookie.html">Cookie- og privatlivspolitik</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>COPYRIGHT © 2021 SPIR AARHUS</p>
+        </div>
+
+
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="js/formoutput-ansoegning.js"></script>
+</body>
+
+</html>
