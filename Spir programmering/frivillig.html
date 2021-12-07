@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliv frivillig hos SPIR aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header class="omos-banner">
+        <div class="logo"><a href="index.html"><img src="images/spir-logo.png" alt="Spir logo"></a></div>
+        <a href="javascript:;" title="" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+
+        <div class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">Events</a>
+                    <ul class="menu__list2">
+                        <li class="menu__item2"><a href="events.html" title="" class="menu__link2">Næste event</a></li>
+                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Bliv frivillig</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">Ansøg</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">InSPIRation</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">Om os</a>
+                    <ul class="menu__list2">
+                        <li class="menu__item2"><a href="omos.html" title="" class="menu__link2">Hvem er vi?</a></li>
+                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Sponsorer</a></li>
+                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Spørgsmål og svar</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" title="" class="menu__link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="frivillig-section1">
+            <div class="frivillig-s1-flex">
+                <div class="frivillig-s1-content">
+                    <div class="frivillig-s1-tekst">
+                        <h2>Vil du være en del af SPIR aarhus?</h2>
+                        <p> Frivillighed er en vigtig byggesten for Spir Aarhus. Vi har en styregruppe som planlægger
+                            vores events, og sammen med vores skønne eventfrivillige eksekverer vi de hyggeligste Spir
+                            aftner. Frivillighed er altafgørende for, at Spir kan lykkedes og vi sammen kan give nogle
+                            penge til seje iværksættere.
+                            <br>
+                            <br>
+                            Vil du være med? Så bare udfyld og send din tilmelding herunder, og så kontakter vi dig op
+                            til vores næste event.
+                        </p>
+
+                    </div>
+                    <!--frivillig-s1-tekst-->
+                    <div class="frivillig-s1-billede">
+                        <img src="images/frivillig-events.png">
+                    </div>
+                    <!--frivillig-s1-billede-->
+                </div>
+                <!--frivillig-s1-content-->
+            </div>
+            <!--frivillig-s1-flex-->
+        </section>
+        <!--frivillig-section1-->
+
+        <section class="frivillig-section2">
+            <div class="frivillig-s2-flex">
+                <div class="frivillig-s2-content">
+                    <div class="frivillig-s2-tekst">
+                        <h2>Udfyld formularen her</h2>
+                        <p> FORMULAR HER
+                        </p>
+                        <form class="frivillig-formular"  id="frivillig-formular" action="kvittering-frivillig.html">
+                            <div class="frivillig-formular-navn">
+                                <br>
+                                
+                                <label>Fornavn</label>
+                                
+                                <input type="text" id="fornavn" placeholder="Fornavn" required>  
+                              
+                                <label>Efternavn</label>
+                               
+                                <input type="text" id="efternavn" placeholder="Efternavn" required>
+                            </div>
+                                <br>
+                         
+                            <div class="frivillig-formular-kontakt">
+                                <label>Mobil</label>
+                                <input type="tel" id="tlf" placeholder="Mobil" required>
+                             
+                                <label>Email</label>
+                                <input type="mail" id="email" placeholder="Email" required>
+                               
+                            </div>
+                            <div class="frivillig-formular-info">
+
+
+                                <label>Skriv lidt om dig selv</label>
+                                <textarea rows="2" cols="25" id="infoomdig" placeholder="Skriv lidt om dig selv" required> </textarea>
+                                
+                            </div>
+
+                    
+                            <div class="frivillig-formular-tekst">
+                                <p>Har du været frivillig før?</p>
+                                <label>Ja</label> <input type="checkbox" id="checkboxfrivillig1" placeholder="Ja" value="Ja">
+                                <br>
+                                <label>Nej</label>
+                                <input type="checkbox" id="checkboxfrivillig2" placeholder="Nej" value="Nej">
+                                <br>
+                            </div>
+                            <div class="cookie-consent">
+                                <p>Når du ansøger om at blive frivillig,
+                                    godkender du samtidig at SPIR aarhus
+                                    gemmer dine oplysninger i 6 mdr i hht.
+                                    GDPR lovgivningen. Du giver samtidig
+    
+                                    lov til at SPIR må kontakte dig i forbind-
+                                    else med events.
+    
+                                    Efter de 6 mdr. bliver dine
+                                    oplysninger slettet</p>
+                                    <br>
+                                <label class="">Accepter</label>
+                                <input type="checkbox" id="accepter" placeholder="" required>
+    
+                            </div>
+    
+                            <div class="læs-mere-knap">
+                                <button type="submit" class="send-tilmelding-a">Send din tilmelding</button>
+                            </div>
+                            <!--Læs-mere-knap-->
+                        </form>
+                        
+                    </div>
+                
+                </div>
+                <!--frivillig-s2-content-->
+            </div>
+            <!--frivillig-s2-flex-->
+        </section>
+        <!--frivillig-section2-->
+
+
+    </main>
+
+
+
+    <!--Chatbot-->
+
+
+    <div class="cc-contactpop fixed">
+        <h3>Kontakt os</h3>
+        <div class="renseignement">
+            <i class="fa fa-times"></i>
+            <p>Har du et spørgsmål som du ikke kan finde svar på? Skriv en besked til os her - vi svarer hurtigst muligt
+            </p>
+        </div>
+        <form method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Navn" />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" placeholder="Mobil" />
+            </div>
+            <br>
+            <div class="form-group">
+                <textarea id="message" type="text" placeholder="Skriv her"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/spir-logo.png" alt="bold logo footer">
+                <div class="socials">
+                    <a href="https://www.facebook.com/bolddrinksdk" target="_blank"><img src="images/facebookicon.png"
+                            alt="facebookicon"></a>
+                    <a href="https://www.instagram.com/bolddrinks/?hl=da" target="_blank"><img
+                            src="images/instagramicon.png" alt="instagramicon"></a>
+                </div>
+            </div> <!-- end of Footer-left-->
+
+            <div class="footer-flex">
+                <h2>EVENTS</h2>
+
+                <ul class="box">
+                    <li><a href="events.html">Næste event</a></li>
+                    <li><a href="frivillig.html">Bliv event-frivillig</a></li>
+                    <li><a href="ansoegning.html">Pitch-ansøgning</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-flex">
+
+
+                <h2>OM OS</h2>
+
+                <ul class="box">
+                    <li><a href="produkter.html">InSPIRation</a></li>
+                    <li><a href="omos.html">Hvem er vi?</a></li>
+                    <li><a href="omos.html">Vores værdier</a></li>
+                    <li><a href="#">Vores sponsorer</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex">
+
+
+                <h2>INFO</h2>
+
+                <ul class="box">
+                    <li><a href="#">Spørgsmål og svar</a></li>
+                    <li><a href="cookie.html">Cookie- og privatlivspolitik</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>COPYRIGHT © 2021 SPIR AARHUS</p>
+        </div>
+
+
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="js/formoutput-frivillig.js"></script>
+</body>
+
+</html>
