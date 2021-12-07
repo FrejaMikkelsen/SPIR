@@ -68,7 +68,7 @@
 }
 
 .menu {
-    background: #ded9ca;
+    background: white;
     display: flex;
     align-items: center;
     position: fixed;
@@ -78,7 +78,6 @@
     bottom: 0;
     transition: .1s;
     visibility: hidden;
-
 }
 
 .menu.is-active {
@@ -90,16 +89,13 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-
 }
 
 .menu__list2 {
     display: flex;
     flex-direction: column;
     list-style: none;
-
 }
-
 
 
 .menu__item:not(:last-child) {
@@ -116,7 +112,7 @@
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
-    color: #158059;
+    color: black;
     text-decoration: none;
 }
 
@@ -126,7 +122,7 @@
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #158059;
+    color: black;
     text-decoration: none;
     padding-left: 50px;
     padding-top: 1em;
@@ -187,12 +183,9 @@
     top: 0px;
     right: 0px;
     color: #fff;
-    font-weight: 300;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    font-weight: 500;
+    font-size: 29px;
+    padding: 15px;
     cursor: pointer;
     background: #6b6c6b;
 }
@@ -259,7 +252,7 @@
     background: #4f504f;
 }
 
-/*--------------bannerbillede forside ---------------*/
+/*--------------bannerbillede---------------*/
 .forside-banner {
     background: url(../images/forside-banner.jpg);
     background-size: 100%;
@@ -272,10 +265,8 @@
     position: relative;
 }
 
-
-/*--------------bannerbillede om os ---------------*/
-.omos-banner {
-    background: url(../images/omos-banner.png);
+.kontakt-banner {
+    background: url(../images/P9041138.jpg);
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -283,12 +274,11 @@
     padding-bottom: 4%;
     background-repeat: no-repeat;
     z-index: 10;
-    position: relative;
+    position: relative; 
 }
 
-/*--------------bannerbillede events ---------------*/
-.events-banner {
-    background: url(../images/events-banner.png);
+.spons-banner {
+    background: url(../images/Untitled-169.jpg);
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -296,35 +286,8 @@
     padding-bottom: 4%;
     background-repeat: no-repeat;
     z-index: 10;
-    position: relative;
+    position: relative;  
 }
-
-/*--------------bannerbillede ansoegning ---------------*/
-.ansoegning-banner {
-    background: url(../images/ansoegning-banner.png);
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    padding-bottom: 4%;
-    background-repeat: no-repeat;
-    z-index: 10;
-    position: relative;
-}
-
-/*--------------bannerbillede cookie ---------------*/
-.cookie-banner {
-    background: url(../images/ansoegning-banner.png);
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    padding-bottom: 4%;
-    background-repeat: no-repeat;
-    z-index: 10;
-    position: relative;
-}
-/*------------------------logo ----------------------------*/
 
 .logo img {
     width: 11%;
@@ -336,10 +299,20 @@
 }
 
 
-/*------------------------ main forside ----------------------------*/
+/*------------------------main----------------------------*/
 .forside-section1 {
     background-color: #158059;
     width: 100%;
+}
+
+.kontakt-section1 {
+    background-color: #158059;
+    width: 100%;   
+}
+
+.spons-section1 {
+    background-color: #158059;
+    width: 100%;  
 }
 
 .forside-s1-billede img {
@@ -348,10 +321,35 @@
     margin: 0 auto;
 }
 
+.kontakt-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.spons-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+
 .forside-s1-billede {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 2em;
+}
+
+.kontakt-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;  
+}
+
+.spons-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em; 
 }
 
 .forside-s1-tekst {
@@ -361,11 +359,39 @@
     color: white;
 }
 
+.kontakt-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white; 
+}
+
+.spons-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;  
+}
+
 .forside-s1-tekst h2 {
     font-weight: 500;
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.kontakt-s1-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.spons-s1-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;   
 }
 
 .forside-s1-tekst p {
@@ -374,9 +400,42 @@
     display: block;
     margin: 0 auto;
     padding-top: 1em;
+    padding-bottom: 1em;
     text-align: justify;
 }
 
+.kontakt-s1-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: justify; 
+}
+
+.spons-s1-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: justify;  
+}
+
+.kontakt-s1-tekst h3 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.spons-s1-tekst a, .spons-s2-tekst a {
+    color: #44102C;
+    font-weight: 600;
+    text-decoration: none;
+}
 /*section2*/
 
 .forside-section2 {
@@ -384,7 +443,18 @@
     width: 100%;
 }
 
+.spons-section2 {
+    background-color: #90ad9e;
+    width: 100%; 
+}
+
 .forside-s2-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.spons-s2-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
@@ -396,11 +466,25 @@
     padding-bottom: 2em;
 }
 
+.spons-s2-billede {
+    width: 80%;
+    padding-top: 1em;
+    padding-bottom: 2em; 
+    padding-left: 15%;
+}
+
 .forside-s2-tekst {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 1em;
     color: white;
+}
+
+.spons-s2-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white; 
 }
 
 .forside-s2-tekst h2 {
@@ -410,6 +494,13 @@
     margin: 0 auto;
 }
 
+.spons-s2-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
 .forside-s2-tekst p {
     font-weight: 300;
     width: 90%;
@@ -417,7 +508,15 @@
     margin: 0 auto;
     padding-top: 1em;
     text-align: justify;
+}
 
+.spons-s2-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
 }
 
 /*section3*/
@@ -434,7 +533,7 @@
     color: white;
 }
 
-.forside-s3-content h2 {
+.forside-s3-content h2{
     font-weight: 500;
     width: 90%;
     display: block;
@@ -442,7 +541,7 @@
     text-align: center;
 }
 
-.forside-s3-content p {
+.forside-s3-content p{
     font-weight: 300;
     width: 90%;
     display: block;
@@ -478,14 +577,14 @@
     color: white;
 }
 
-.forside-s4-tekst h2 {
+.forside-s4-tekst h2{
     font-weight: 500;
     width: 90%;
     display: block;
     margin: 0 auto;
 }
 
-.forside-s4-tekst p {
+.forside-s4-tekst p{
     font-weight: 300;
     width: 90%;
     display: block;
@@ -499,13 +598,13 @@
 
 /*---knapper----*/
 
-.læs-mere-knap {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
+.læs-mere-knap{
+display: flex;
+justify-content: center;
+padding-top: 2em;
 }
 
-.læs-mere-knap-a {
+.læs-mere-knap-a{
     background-color: #441d2c;
     border: none;
     color: white;
@@ -517,14 +616,15 @@
 }
 
 
-/*-----------------------testimonail slider start -----------------*/
+/* ------------- testemonials slider start ----------*/
+
 .testimonial_body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ded9ca;
+    color: black;
 
 }
 
@@ -545,12 +645,14 @@
     justify-content: center;
     transition: 1s;
 
+
+
 }
 
 .testimonial_card {
     width: 100%;
     min-height: 100%;
-    background: #ded9ca;
+    background: rgb(173, 170, 161);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,6 +671,7 @@
 .personimg {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
 
@@ -577,10 +680,9 @@
     bottom: 5px;
     right: 10px;
     padding: 5px 20px;
-    background: #158059;
+    background: cornsilk;
     text-transform: capitalize;
     font-size: 14px;
-    color: #fff;
 }
 
 
@@ -592,6 +694,8 @@
     position: relative;
     padding-top: 40px;
 
+
+
 }
 
 
@@ -599,7 +703,6 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 30px;
-    color: #90ad9e;
 
 
 }
@@ -618,7 +721,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #158059;
+    border: 2px solid #488484;
     cursor: pointer;
     margin-left: 20px;
     transition: 0.5s;
@@ -630,16 +733,6 @@
 
 
 @media (max-width: 800px) {
-
-    .testimonial_body {
-        width: 100%;
-        height: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-    }
-
-
     .testimonial_container {
         width: 100%;
         justify-content: center;
@@ -681,7 +774,7 @@
 
     .testimonial_indicators {
         width: 100%;
-        margin-left: 57%;
+        margin-left: 60%;
     }
 
     .testimonial_indicators button {
@@ -695,1336 +788,8 @@
     }
 }
 
-/*-----------------------testimonail slider slut -----------------*/
 
-
-/*------------------------ om os main ----------------------------*/
-.omos-section1 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.omos-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.omos-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-/*section2*/
-
-.omos-section2 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.omos-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s2-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section3 er blevet til section8*/
-
-
-/*section4*/
-
-.omos-section4 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.omos-s4-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s4-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s4-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.omos-s4-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s4-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*section5*/
-
-.omos-section5 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s5-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s5-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s5-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s5-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s5-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section6*/
-
-.omos-section6 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.omos-s6-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s6-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s6-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.omos-s6-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s6-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*section7*/
-
-.omos-section7 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s7-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s7-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s7-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s7-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s7-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section8*/
-
-.omos-section8 {
-    background-color: #158059;
-    width: 100%;
-}
-
-.omos-s8-content {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s8-content h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.omos-s8-content p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-
-
-/*------------------------ Næste events (events) main ----------------------------*/
-.events-section1 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.events-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.events-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.events-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-/*section2*/
-
-.events-section2 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.events-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s2-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.events-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section3 er blevet til section8*/
-
-
-/*section4*/
-
-.events-section4 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.events-s4-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s4-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s4-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.events-s4-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s4-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*section5*/
-
-.events-section5 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.events-s5-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s5-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s5-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.events-s5-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s5-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section6*/
-
-.events-section6 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.events-s6-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s6-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s6-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.events-s6-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s6-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/* ---- program for event section6 ---- */
-
-.events-s6-tekst p {
-    display: none;
-}
-
-.program_event {
-    box-sizing: border-box;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.program_event::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #158059;
-    top: 0;
-    bottom: 1%;
-    left: 50%;
-    margin-left: -3px;
-}
-
-
-.container_program {
-    padding: 20px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-
-.container_program::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: #fff;
-    border: 4px solid #158059;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-
-.right {
-    left: 50%;
-}
-
-.right::after {
-    left: -16px;
-}
-
-
-.content_program {
-    padding: 20px 30px;
-    background-color: #90ad9e;
-    position: relative;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 0.9em;
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .events-s6-tekst p {
-        display: block;
-    }
-
-    .program_event {
-        display: none;
-    }
-
-    .program_event::after {
-        left: 31px;
-    }
-
-    .container_program {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .right::after {
-        left: 15px;
-    }
-
-    .right {
-        left: 0%;
-    }
-}
-
-
-
-/*section7*/
-
-.events-section7 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.events-s7-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s7-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.events-s7-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.events-s7-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.events-s7-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*------------------------ frivillig main ----------------------------*/
-.frivillig-section1 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.frivillig-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.frivillig-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.frivillig-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.frivillig-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.frivillig-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.frivillig-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-/*section2*/
-
-.frivillig-section2 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-
-.frivillig-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.frivillig-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.frivillig-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*-----------------------ansøg til frivillige formular start -----------------*/
-
-
-.frivillig-formular {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-
-.frivillig-formular label {
-    position: absolute;
-    opacity: 0.9;
-    left: 1rem;
-    pointer-events: none;
-    color: #fff;
-    transition: all .22s;
-    transform: translateY(-50%);
-    display: block;
-    font-size: 1em;
-   
-}
-
-.frivillig-formular input {
-    width: 100%;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border: none;
-    font-size: 0.9em;
-}
-
-.frivillig-formular input:focus {
-    background: rgb(245, 240, 240);
-    outline: 0;
-}
-
-
-.frivillig-formular-navn {
-    max-width: 80rem;
-    width: 90%;
-}
-.frivillig-formular-efternavn {
-    max-width: 80rem;
-    width: 90%;
-}
-
-.frivillig-formular-kontakt {
-    max-width: 34rem;
-    width: 90%;
-}
-
-.frivillig-formular-info {
-    max-width: 34rem;
-    width: 90%;
-
-}
-
-#infoomdig {
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border: none;
-    font-size: 0.9em;
-    height: 200px !important;
-    width: 100%;
-
-}
-
-textarea:focus {
-    background: rgb(245, 240, 240);
-    outline: 0;
-}
-.frivillig-formular-tekst {
-    font-weight: 300;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    
-}
-.frivillig-formular-tekst input {
-    width: 17px;
-    height: 17px;
-    margin-left: 15%;
-   
-
-}
-
-.frivillig-formular-tekst label {
-    padding-top: 20%;
-   
-
-}
-
-.send-tilmelding-a {
-    background-color: #441d2c;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 20%;
-
-}
-
-/*--------------------- kvittering til FRIVILLIG ansøgning main -------------------------*/
-.kvittering-frivillig-section1 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.kvittering-frivillig-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-frivillig-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.kvittering-frivillig-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.kvittering-frivillig-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-frivillig-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.kvittering-frivillig-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-#outputfrivillig {
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 2em;
-    padding-left: 5%;
-    padding-top: 10%;
-}
-#output-frivillig {
-    padding-left: 5%;
-    
-}
-/*section2*/
-
-.kvittering-frivillig-section2 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-
-.kvittering-frivillig-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.kvittering-frivillig-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-frivillig-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-.kvittering-frivillig-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-frivillig-s2-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-
-
-
-
-/*------------------------ ansøgning til præsentation main ----------------------------*/
-.ansoegning-section1 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.ansoegning-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.ansoegning-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.ansoegning-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.ansoegning-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.ansoegning-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.ansoegning-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-/*section2*/
-
-.ansoegning-section2 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-
-.ansoegning-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.ansoegning-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.ansoegning-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*----------------------- formular til præsentation start -----------------*/
-
-
-.ansoegning-formular {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-
-.ansoegning-formular label {
-    position: absolute;
-    opacity: 0.9;
-    left: 1rem;
-    pointer-events: none;
-    color: #fff;
-    transition: all .22s;
-    transform: translateY(-50%);
-    display: block;
-    font-size: 1em;
-   
-}
-
-.ansoegning-formular input {
-    width: 100%;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border: none;
-    font-size: 0.9em;
-}
-
-.ansoegning-formular input:focus {
-    background: rgb(245, 240, 240);
-    outline: 0;
-}
-
-
-.ansoegning-formular-navn {
-    max-width: 80rem;
-    width: 90%;
-}
-.ansoegning-formular-efternavn {
-    max-width: 80rem;
-    width: 90%;
-}
-
-.ansoegning-formular-kontakt {
-    max-width: 34rem;
-    width: 90%;
-}
-
-.ansoegning-formular-info1 {
-    max-width: 34rem;
-    width: 90%;
-
-}
-
-.ansoegning-formular-info2 {
-    max-width: 34rem;
-    width: 90%;
-
-}
-.ansoegning-formular-info3 {
-    max-width: 34rem;
-    width: 90%;
-
-}
-.ansoegning-formular-info4 {
-    max-width: 34rem;
-    width: 90%;
-
-}
-
-.infoomdig {
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border: none;
-    font-size: 0.9em;
-    height: 200px !important;
-    width: 100%;
-
-}
-
-textarea:focus {
-    background: rgb(245, 240, 240);
-    outline: 0;
-}
-.ansoegning-formular-tekst {
-    font-weight: 300;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    
-}
-.ansoegning-formular-tekst p {
-    padding-bottom: 5%;
-}
-.ansoegning-formular-tekst input {
-    margin-left: 2%;
-
-}
-
-.ansoegning-formular-tekst label {
-    margin-left: 5%;
-    margin-top: -10%;
-}
-
-input.ansoegning-checkbox{
-    width: 17px;
-    height: 17px;
-    margin-left: 20%;
-    
-}
-
-.cookie-consent label {
-    margin-right: 10%;
-    margin-top: 2%;
-
-   
-}
-.cookie-consent p {
-    font-size: 0.9em;
-    padding-top: 15%;
-}
-
-#accepter {
-    width: 17px;
-    height: 17px;
-    margin-left: 30%;
-    margin-top: -10%;
-
-}
-
-.send-tilmelding-a {
-    background-color: #441d2c;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 20%;
-
-}
-
-
-
-/*--------------------- KVITTERING til præsentations ansøgning main -------------------------*/
-.kvittering-ansoegning-section1 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.kvittering-ansoegning-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-ansoegning-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.kvittering-ansoegning-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.kvittering-ansoegning-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-ansoegning-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.kvittering-ansoegning-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-#outputansoegning {
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 2em;
-    padding-left: 5%;
-    padding-top: 10%;
-}
-
-/*section2*/
-
-.kvittering-ansoegning-section2 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-
-.kvittering-ansoegning-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.kvittering-ansoegning-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-ansoegning-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-.kvittering-ansoegning-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.kvittering-ansoegning-s2-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-
-/*--------------------- cookie main -------------------------*/
-.cookie-section1 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-
-.cookie-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.cookie-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.cookie-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.cookie-s1-tekst h3 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: -11%;
-}
-
-
-
-
+/* ------------- testemonials slider slut ----------*/
 
 
 /*---------------------------------Footer------------------------*/
@@ -2084,8 +849,7 @@ footer {
 
 .box a {
     color: white;
-    font-size: 15px;
-    ;
+    font-size: 15px;;
 }
 
 .box {
@@ -2113,8 +877,7 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
-    /*fjernes ved desktop*/
+    flex-direction: column; /*fjernes ved desktop*/
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
