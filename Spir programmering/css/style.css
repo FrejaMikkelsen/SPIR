@@ -1288,6 +1288,7 @@
 }
 
 
+
 @media screen and (max-width: 600px) {
 
     .events-s6-tekst p {
@@ -1316,8 +1317,6 @@
         left: 0%;
     }
 }
-
-
 
 /*section7*/
 
@@ -2021,6 +2020,179 @@ input.ansoegning-checkbox{
     margin: 0 auto;
     margin-bottom: -11%;
 }
+
+/*--------------Bannerbillede Kontakt og sponsorer---------------*/
+
+.kontakt-banner {
+    background: url(../images/P9041138.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative; 
+}
+
+.spons-banner {
+    background: url(../images/Untitled-169.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;  
+}
+
+.logo img {
+    width: 11%;
+    padding-left: 2%;
+}
+
+.logo {
+    margin-top: -38%;
+}
+
+
+/*------------------------main kontakt og sponsorer----------------------------*/
+
+/*section1*/
+
+.kontakt-section1 {
+    background-color: #158059;
+    width: 100%;   
+}
+
+.kontakt-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.kontakt-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;  
+}
+
+.kontakt-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white; 
+}
+
+.kontakt-s1-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.kontakt-s1-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: justify; 
+}
+
+
+.spons-section1 {
+    background-color: #158059;
+    width: 100%;  
+}
+
+.spons-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.spons-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em; 
+}
+
+.spons-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;  
+}
+
+.spons-s1-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;   
+}
+
+.spons-s1-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: justify;  
+}
+
+.spons-s1-tekst a, .spons-s2-tekst a {
+    color: #44102C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*section2*/
+
+.spons-section2 {
+    background-color: #90ad9e;
+    width: 100%; 
+}
+
+.spons-s2-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.spons-s2-billede {
+    width: 80%;
+    padding-top: 1em;
+    padding-bottom: 2em; 
+    padding-left: 15%;
+}
+
+.spons-s2-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white; 
+}
+
+.spons-s2-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.spons-s2-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+}
+
 
 
 
