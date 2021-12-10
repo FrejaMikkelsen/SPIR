@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Alt bag popupboksen */
+.popup-screen {
+    z-index: 999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s ease;
+    transition-property: visibility;
+}
+
+.popup-screen.active {
+    visibility: visible;
+}
+/* Slut på alt bag popupboksen */
+
+.popup-box {
+    position: relative;
+    background: #90ad9e;
+    backdrop-filter: blur(10px);
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    transform: scale(0);
+    transition: 0.5s ease;
+    transition-property: transform;
+}
+
+.popup-screen.active .popup-box {
+    transform: scale(1);
+}
+
+.popup-box h2 {
+    font-size: 2.1em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.popup-box p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.popup-box .accept-btn {
+    color: #fff;
+    background: #44102C;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 7px 7px;
+    border-radius: 3px;
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    transition-property: opacity;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
