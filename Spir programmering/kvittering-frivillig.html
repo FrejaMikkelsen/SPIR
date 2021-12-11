@@ -37,18 +37,18 @@
                     <a href="ansoegning.html" title="" class="menu__link">Ansøg</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" title="" class="menu__link">InSPIRation</a>
+                    <a href="inSPIRation.html" title="" class="menu__link">InSPIRation</a>
                 </li>
                 <li class="menu__item">
                     <a href="omos.html" title="" class="menu__link">Om os</a>
                     <ul class="menu__list2">
                         <li class="menu__item2"><a href="omos.html" title="" class="menu__link2">Hvem er vi?</a></li>
-                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Sponsorer</a></li>
-                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Spørgsmål og svar</a></li>
+                        <li class="menu__item2"><a href="sponsorer.html" title="" class="menu__link2">Sponsorer</a></li>
+                        <li class="menu__item2"><a href="faq.html" title="" class="menu__link2">Spørgsmål og svar</a></li>
                     </ul>
                 </li>
                 <li class="menu__item">
-                    <a href="#" title="" class="menu__link">Kontakt</a>
+                    <a href="kontakt.html" title="" class="menu__link">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -119,9 +119,10 @@
             <p>Har du et spørgsmål som du ikke kan finde svar på? Skriv en besked til os her - vi svarer hurtigst muligt
             </p>
         </div>
-        <form method="post">
+        <form action="https://formsubmit.co/eaafmi@students.eaaa.dk" method="POST">
             <div class="form-group">
                 <input type="text" name="name" placeholder="Navn" />
+                <input type="hidden" name="_subject" value="Ny mail!">
             </div>
             <div class="form-group">
                 <input type="email" name="email" placeholder="E-mail" />
@@ -131,7 +132,7 @@
             </div>
             <br>
             <div class="form-group">
-                <textarea id="message" type="text" placeholder="Skriv her"></textarea>
+                <textarea id="message" type="text" placeholder="Skriv her" name="subject"></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
@@ -143,9 +144,9 @@
             <div class="footer-left">
                 <img src="images/spir-logo.png" alt="bold logo footer">
                 <div class="socials">
-                    <a href="https://www.facebook.com/bolddrinksdk" target="_blank"><img src="images/facebookicon.png"
+                    <a href="https://www.facebook.com/Spiraarhus" target="_blank"><img src="images/facebookicon.png"
                             alt="facebookicon"></a>
-                    <a href="https://www.instagram.com/bolddrinks/?hl=da" target="_blank"><img
+                    <a href="https://www.instagram.com/spiraarhus/?hl=da" target="_blank"><img
                             src="images/instagramicon.png" alt="instagramicon"></a>
                 </div>
             </div> <!-- end of Footer-left-->
