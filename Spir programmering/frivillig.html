@@ -13,7 +13,8 @@
 
 <body>
 
-    <header class="omos-banner">
+    <header class="frivillig-banner">
+       
         <div class="logo"><a href="index.html"><img src="images/spir-logo.png" alt="Spir logo"></a></div>
         <a href="javascript:;" title="" class="btn">
             <span></span>
@@ -25,21 +26,21 @@
         <div class="menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" title="" class="menu__link">Events</a>
+                    <a href="events.html" title="" class="menu__link">Events</a>
                     <ul class="menu__list2">
                         <li class="menu__item2"><a href="events.html" title="" class="menu__link2">Næste event</a></li>
-                        <li class="menu__item2"><a href="#" title="" class="menu__link2">Bliv frivillig</a></li>
+                        <li class="menu__item2"><a href="frivillig.html" title="" class="menu__link2">Bliv frivillig</a></li>
                     </ul>
                 </li>
 
                 <li class="menu__item">
-                    <a href="#" title="" class="menu__link">Ansøg</a>
+                    <a href="ansoegning.html" title="" class="menu__link">Ansøg</a>
                 </li>
                 <li class="menu__item">
                     <a href="#" title="" class="menu__link">InSPIRation</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" title="" class="menu__link">Om os</a>
+                    <a href="omos.html" title="" class="menu__link">Om os</a>
                     <ul class="menu__list2">
                         <li class="menu__item2"><a href="omos.html" title="" class="menu__link2">Hvem er vi?</a></li>
                         <li class="menu__item2"><a href="#" title="" class="menu__link2">Sponsorer</a></li>
@@ -87,9 +88,12 @@
                 <div class="frivillig-s2-content">
                     <div class="frivillig-s2-tekst">
                         <h2>Udfyld formularen her</h2>
-                        <p> FORMULAR HER
+                        <p> Vi kan altid bruge et sæt ekstra hænder til vores events. Som frivillig hos Spir vil du bl.a. hjælpe med at sætte borde og stole op, dække op, tage billeder, servere mad, hjælpe med tombola og meget mere. Til gengæld får du en garanteret hyggelig aften sammen med en masse andre mennesker der går op i iværksætteri og crowdfunding, hvor du kan udbygge dit netværk med nye forbindelser og venner.<br>
+                            Er du interesseret i at være frivillig hos Spir Aarhus, vil vi vildt gerne høre fra dig. 
+                            
                         </p>
                         <form class="frivillig-formular"  id="frivillig-formular" action="kvittering-frivillig.html">
+                            <div class="flex-frivillig-kontakt-info">
                             <div class="frivillig-formular-navn">
                                 <br>
                                 
@@ -101,6 +105,7 @@
                                
                                 <input type="text" id="efternavn" placeholder="Efternavn" required>
                             </div>
+                        
                                 <br>
                          
                             <div class="frivillig-formular-kontakt">
@@ -111,21 +116,19 @@
                                 <input type="mail" id="email" placeholder="Email" required>
                                
                             </div>
+                        </div>
                             <div class="frivillig-formular-info">
 
 
                                 <label>Skriv lidt om dig selv</label>
-                                <textarea rows="2" cols="25" id="infoomdig" placeholder="Skriv lidt om dig selv" required> </textarea>
+                                <textarea rows="2" cols="25" id="infoomdig" placeholder="Skriv lidt om hvem du er, og hvorfor du gerne vil være med i SPIR" required> </textarea>
                                 
                             </div>
 
                     
                             <div class="frivillig-formular-tekst">
                                 <p>Har du været frivillig før?</p>
-                                <label>Ja</label> <input type="checkbox" id="checkboxfrivillig1" placeholder="Ja" value="Ja">
-                                <br>
-                                <label>Nej</label>
-                                <input type="checkbox" id="checkboxfrivillig2" placeholder="Nej" value="Nej">
+                                <input type="text" id="frivillig" placeholder="Hvis ja, hvor henne?" required>
                                 <br>
                             </div>
                             <div class="cookie-consent">
@@ -134,14 +137,12 @@
                                     gemmer dine oplysninger i 6 mdr i hht.
                                     GDPR lovgivningen. Du giver samtidig
     
-                                    lov til at SPIR må kontakte dig i forbind-
-                                    else med events.
+                                    lov til at SPIR må kontakte dig i forbindelse med events.
     
                                     Efter de 6 mdr. bliver dine
-                                    oplysninger slettet</p>
+                                    oplysninger slettet. Vil du læse mere om vores cookie og privatlivspolitik, kan du gøre det <a href="cookie.html">her</a></p>
                                     <br>
-                                <label class="">Accepter</label>
-                                <input type="checkbox" id="accepter" placeholder="" required>
+                                
     
                             </div>
     
@@ -212,7 +213,7 @@
                 <ul class="box">
                     <li><a href="events.html">Næste event</a></li>
                     <li><a href="frivillig.html">Bliv event-frivillig</a></li>
-                    <li><a href="ansoegning.html">Pitch-ansøgning</a></li>
+                    <li><a href="ansoegning.html">Ansøg til præsentation</a></li>
                 </ul>
 
             </div>
