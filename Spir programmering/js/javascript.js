@@ -40,7 +40,7 @@ const indicators = [...document.querySelectorAll('.testimonial_indicators button
 
 let currentTestimonial = 0; //default 0
 
-indicators.forEach((item, i) => {
+indicators.forEach((item, i) => { //addEventlistner, lytter efter når der klikkes på 'indicators' under slideren
     item.addEventListener('click',() => {
         indicators [currentTestimonial].classList.remove('active');
         wrapper.style.marginLeft = `${-99 * i}%`; //bestemmer hvor langt slideren 'rykker' sig hver gang der klikkes
@@ -56,10 +56,11 @@ indicators.forEach((item, i) => {
 // formular til ansøgning af præsentation 
 
 const ansoegningformular = document.getElementById("ansoegning-formular");
-
+//add eventlistner, som lytter efter når der bliver trykket på submit knappen - 
 ansoegningformular.addEventListener("submit", function(e) {
     e.preventDefault();
-    //forhinde at formularen gør som den plejer - det vil vi styre
+    //forhinde at formularen gør som den plejer, vi vil styre den over til kvitteringssiden 
+
     const navn = document.getElementById("navn").value;
     const mobil = document.getElementById("mobil").value;
     const mail = document.getElementById("mail").value;
@@ -68,7 +69,8 @@ ansoegningformular.addEventListener("submit", function(e) {
     const forskel = document.getElementById("info2").value;
     const vinder = document.getElementById("info3").value;
     const links = document.getElementById("info4").value;
-    const fremskridt = document.getElementById("checkboxansoegning1").value;
+    const kendskab = document.getElementById("kendskab").value;
+    const deltage = document.getElementById("deltage").value;
 
 
     //bindinger til navn i html 
@@ -80,8 +82,9 @@ ansoegningformular.addEventListener("submit", function(e) {
     sessionStorage.setItem("info2", forskel);
     sessionStorage.setItem("info3", vinder);
     sessionStorage.setItem("info4", links);
-    sessionStorage.setItem("checkboxansoegning1", fremskridt);
-
+    sessionStorage.setItem("kendskab", kendskab);
+   sessionStorage.setItem("deltage", deltage);
+// vi bruger sessionStorage, som lagre info fra den ene side til næste og kun indtil brugeren har afsluttet og lukket browseren. Da det ikke ville give værdi for SPIR eller brugeren med localStorage
 
     document.location.href = "kvittering-ansoegning.html";
     //JS link videre - sender brugeren til den nye side
