@@ -4,14 +4,14 @@ const frivilligformular= document.getElementById("frivillig-formular");
 
 frivilligformular.addEventListener("submit", function (e) {
     e.preventDefault();
-    //forhinde at formularen gør som den plejer - det vil vi styre
+     //forhinde at formularen gør som den plejer, vi vil styre den over til kvitteringssiden 
     const navn = document.getElementById("fornavn").value;
     const efternavn = document.getElementById("efternavn").value;
     const mail = document.getElementById("email").value;
     const mobil = document.getElementById("tlf").value;
     const omdig = document.getElementById("infoomdig").value;
-    const frivillig1 = document.getElementById("checkboxfrivillig1").value;
-    const frivillig2 = document.getElementById("checkboxfrivillig2").value;
+    const frivillig = document.getElementById("frivillig").value;
+   
    
 
 
@@ -21,9 +21,10 @@ frivilligformular.addEventListener("submit", function (e) {
     sessionStorage.setItem("email", mail);
     sessionStorage.setItem("tlf", mobil);
     sessionStorage.setItem("infoomdig", omdig);
-    sessionStorage.setItem("checkboxfrivillig1", frivillig1);
-    sessionStorage.setItem("checkboxfrivillig2", frivillig2);
-
+    sessionStorage.setItem("frivillig", frivillig);
+ 
+ 
+// vi bruger sessionStorage, som lagre info fra den ene side til næste og kun indtil brugeren har afsluttet og lukket browseren. Da det ikke ville give værdi for SPIR eller brugeren med localStorage
 
     document.location.href = "kvittering-frivillig.html";
     //JS link, videre sender brugeren til den nye side
