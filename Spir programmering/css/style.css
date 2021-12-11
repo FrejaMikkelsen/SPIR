@@ -187,12 +187,9 @@
     top: 0px;
     right: 0px;
     color: #fff;
-    font-weight: 300;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    font-weight: 500;
+    font-size: 29px;
+    padding: 15px;
     cursor: pointer;
     background: #6b6c6b;
 }
@@ -272,6 +269,18 @@
     position: relative;
 }
 
+/*--------------bannerbillede frivillig ---------------*/
+.frivillig-banner {
+    background: url(../images/frivillig-banner.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+}
 
 /*--------------bannerbillede om os ---------------*/
 .omos-banner {
@@ -312,9 +321,10 @@
     position: relative;
 }
 
-/*--------------bannerbillede cookie ---------------*/
-.cookie-banner {
-    background: url(../images/ansoegning-banner.png);
+/*--------------bannerbillede kvittering frivillig---------------*/
+
+.kvittering-ansoegning-banner {
+    background: url(../images/kvittering-ansoegning-banner.png);
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -324,6 +334,31 @@
     z-index: 10;
     position: relative;
 }
+
+/*--------------bannerbillede cookie ---------------*/
+.cookie-banner {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    position: absolute;
+}
+
+/*--------------bannerbillede kvittering frivillig---------------*/
+
+.kvittering-banner {
+    background: url(../images/kvittering-frivillig-banner.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-bottom: 4%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+}
+
 /*------------------------logo ----------------------------*/
 
 .logo img {
@@ -516,499 +551,34 @@
     font-size: 16px;
 }
 
-
-/*-----------------------testimonail slider start -----------------*/
-.testimonial_body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ded9ca;
-
-}
-
-.testimonial_container {
-    position: relative;
-    width: 800px;
-    min-width: 320px;
-    min-height: 250px;
-    padding-bottom: 40px;
-    overflow: hidden;
-
-}
-
-.testimonial_wrapper {
-    width: 400%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    transition: 1s;
-
-}
-
-.testimonial_card {
-    width: 100%;
-    min-height: 100%;
-    background: #ded9ca;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0 33px;
-
-}
-
-.testimonial_image {
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-}
-
-.personimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.person_navn {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    padding: 5px 20px;
-    background: #158059;
-    text-transform: capitalize;
-    font-size: 14px;
-    color: #fff;
-}
-
-
-.testimonial_text_container {
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-    margin-left: 20px;
-    position: relative;
-    padding-top: 40px;
-
-}
-
-
-.testimonial_text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 30px;
-    color: #90ad9e;
-
-
-}
-
-
-.testimonial_indicators {
-    position: absolute;
-    bottom: 0;
-    left: 60%;
-    transform: translateX(-100%);
-}
-
-.testimonial_indicators button {
-    background: none;
-    outline: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid #158059;
-    cursor: pointer;
-    margin-left: 20px;
-    transition: 0.5s;
-    justify-content: center;
-
-
-}
-
-
-
-@media (max-width: 800px) {
-
-    .testimonial_body {
-        width: 100%;
-        height: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-    }
-
-
-    .testimonial_container {
-        width: 100%;
-        justify-content: center;
-
-    }
-
-    .testimonial_card {
-        flex-direction: column;
-
-
-    }
-
-    .testimonial_image {
-        width: 100%;
-
-    }
-
-
-
-    .testimonial_text_container {
-        width: 100%;
-        min-height: auto;
-        height: auto;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        padding-top: 30px;
-
-    }
-
-
-    .testimonial_text {
-        font-size: 14px;
-        line-height: 30px;
-        margin-top: 0px;
-        width: 100%;
-
-
-    }
-
-    .testimonial_indicators {
-        width: 100%;
-        margin-left: 57%;
-    }
-
-    .testimonial_indicators button {
-
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        transition: 0.5s;
-        margin-left: 0;
-        margin-right: 40px;
-    }
-}
-
-/*-----------------------testimonail slider slut -----------------*/
-
-
-/*------------------------ om os main ----------------------------*/
-.omos-section1 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #fff;
-}
-
-.omos-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
-.omos-s1-tekst a {
-    color: #fff;
-    font-weight: 500;
-}
-
-/*section2*/
-
-.omos-section2 {
-    background-color: #002437;
-    width: 100%;
-}
-
-.omos-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s2-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section3 er blevet til section8*/
-
-
-/*section4*/
-
-.omos-section4 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.omos-s4-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s4-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s4-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.omos-s4-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s4-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*section5*/
-
-.omos-section5 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s5-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s5-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s5-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s5-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s5-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section6*/
-
-.omos-section6 {
-    background-color: #ded9ca;
-    width: 100%;
-}
-
-.omos-s6-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s6-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s6-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: #158059;
-}
-
-.omos-s6-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s6-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-/*section7*/
-
-.omos-section7 {
-    background-color: #90ad9e;
-    width: 100%;
-}
-
-.omos-s7-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s7-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.omos-s7-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s7-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.omos-s7-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-/*section8*/
-
-.omos-section8 {
-    background-color: #158059;
-    width: 100%;
-}
-
-.omos-s8-content {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.omos-s8-content h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.omos-s8-content p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-
-}
-
-
-
-
-/*------------------------ Næste events (events) main ----------------------------*/
+/*-------------------- NÆSTE EVENT main --------------------*/
 .events-section1 {
     background-color: #90ad9e;
     width: 100%;
+
+}
+
+.events-s1-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-section1 h2 {
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 10%;
+    padding-left: 5%;
+
 }
 
 .events-s1-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 .events-s1-billede {
@@ -1022,14 +592,9 @@
     padding-top: 2em;
     padding-bottom: 1em;
     color: #fff;
+    max-width: 800px;
 }
 
-.events-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
 
 .events-s1-tekst p {
     font-weight: 300;
@@ -1052,10 +617,27 @@
     width: 100%;
 }
 
+.events-s2-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-section2 h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2em;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
 .events-s2-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 .events-s2-billede {
@@ -1069,14 +651,9 @@
     padding-top: 2em;
     padding-bottom: 1em;
     color: white;
+    max-width: 800px;
 }
 
-.events-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
 
 .events-s2-tekst p {
     font-weight: 300;
@@ -1093,15 +670,32 @@
 
 /*section4*/
 
+.events-s4-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .events-section4 {
     background-color: #ded9ca;
     width: 100%;
+}
+
+.events-section4 h2 {
+    font-weight: 500;
+    width: 100%;
+    font-size: 2em;
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #158059;
+    float: center;
 }
 
 .events-s4-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 600px;
+    ;
 }
 
 .events-s4-billede {
@@ -1115,14 +709,9 @@
     padding-top: 2em;
     padding-bottom: 1em;
     color: #158059;
+    max-width: 800px;
 }
 
-.events-s4-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
 
 .events-s4-tekst p {
     font-weight: 300;
@@ -1134,12 +723,29 @@
 
 }
 
+.events-s4-tekst a {
+    color: #158059;
+    font-weight: 700;
+
+}
 
 /*section5*/
 
 .events-section5 {
     background-color: #90ad9e;
     width: 100%;
+}
+
+.events-section5 h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.events-s5-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .events-s5-billede img {
@@ -1161,12 +767,6 @@
     color: white;
 }
 
-.events-s5-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
 
 .events-s5-tekst p {
     font-weight: 300;
@@ -1185,6 +785,12 @@
     width: 100%;
 }
 
+.events-s6-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .events-s6-billede img {
     width: 90%;
     display: block;
@@ -1194,7 +800,7 @@
 .events-s6-billede {
     width: 100%;
     padding-top: 1em;
-    padding-bottom: 2em;
+
 }
 
 .events-s6-tekst {
@@ -1204,16 +810,17 @@
     color: #fff;
 }
 
-.events-s6-tekst h2 {
+.events-section6 h2 {
     font-weight: 500;
-    width: 90%;
-    display: block;
+    width: 80%;
+    padding-top: 5%;
     margin: 0 auto;
+    color: #fff;
 }
 
 .events-s6-tekst p {
     font-weight: 300;
-    width: 90%;
+    width: 80%;
     display: block;
     margin: 0 auto;
     padding-top: 1em;
@@ -1221,13 +828,14 @@
 
 }
 
-/* ---- program for event section6 ---- */
+/* ---- program for event (section6) ---- */
 
 .events-s6-tekst p {
-    display: none;
+    display: block;
 }
 
 .program_event {
+    display: none;
     box-sizing: border-box;
     position: relative;
     max-width: 1200px;
@@ -1288,42 +896,18 @@
 }
 
 
-
-@media screen and (max-width: 600px) {
-
-    .events-s6-tekst p {
-        display: block;
-    }
-
-    .program_event {
-        display: none;
-    }
-
-    .program_event::after {
-        left: 31px;
-    }
-
-    .container_program {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .right::after {
-        left: 15px;
-    }
-
-    .right {
-        left: 0%;
-    }
-}
-
 /*section7*/
 
 .events-section7 {
     background-color: #ded9ca;
     width: 100%;
 }
+
+.events-s7-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .events-s7-billede img {
     width: 90%;
@@ -1344,6 +928,12 @@
     color: #158059;
 }
 
+.events-s7-tekst a {
+    color: #158059;
+    font-weight: 600;
+
+}
+
 .events-s7-tekst h2 {
     font-weight: 500;
     width: 90%;
@@ -1361,17 +951,40 @@
 
 }
 
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 0;
+    margin: 4%;
 
-/*------------------------ frivillig main ----------------------------*/
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+/*------------------------ ANSØG FRIVILLIG main ----------------------------*/
 .frivillig-section1 {
     background-color: #002437;
     width: 100%;
+}
+
+.frivillig-s1-content {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .frivillig-s1-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 400px;
 }
 
 .frivillig-s1-billede {
@@ -1385,6 +998,7 @@
     padding-top: 2em;
     padding-bottom: 1em;
     color: #fff;
+    max-width: 600px;
 }
 
 .frivillig-s1-tekst h2 {
@@ -1415,6 +1029,11 @@
     width: 100%;
 }
 
+.frivillig-s2-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 
 .frivillig-s2-tekst {
     width: 100%;
@@ -1440,7 +1059,7 @@
 
 }
 
-/*-----------------------ansøg til frivillige formular start -----------------*/
+/*-frivillige formular start -*/
 
 
 .frivillig-formular {
@@ -1450,20 +1069,19 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+
 }
 
 
 .frivillig-formular label {
     position: absolute;
     opacity: 0.9;
-    left: 1rem;
     pointer-events: none;
     color: #fff;
-    transition: all .22s;
-    transform: translateY(-50%);
     display: block;
     font-size: 1em;
-   
+    margin: 0 auto;
+
 }
 
 .frivillig-formular input {
@@ -1479,25 +1097,33 @@
     outline: 0;
 }
 
+.flex-frivillig-kontakt-info {
+    display: inline-block;
+    width: 100%;
+}
 
 .frivillig-formular-navn {
-    max-width: 80rem;
+    max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
+
 .frivillig-formular-efternavn {
-    max-width: 80rem;
+    max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
 
 .frivillig-formular-kontakt {
     max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
 
 .frivillig-formular-info {
     max-width: 34rem;
     width: 90%;
-
+    margin: 0 auto;
 }
 
 #infoomdig {
@@ -1507,34 +1133,39 @@
     font-size: 0.9em;
     height: 200px !important;
     width: 100%;
-
 }
 
 textarea:focus {
     background: rgb(245, 240, 240);
     outline: 0;
 }
-.frivillig-formular-tekst {
-    font-weight: 300;
+
+
+.frivillig-formular-tekst p {
     width: 100%;
-    display: block;
+    padding-bottom: 2%;
+}
+
+
+.frivillig-formular-tekst {
+    max-width: 34rem;
+    width: 90%;
     margin: 0 auto;
-    padding-top: 1em;
-    
-}
-.frivillig-formular-tekst input {
-    width: 17px;
-    height: 17px;
-    margin-left: 15%;
-   
-
 }
 
-.frivillig-formular-tekst label {
-    padding-top: 20%;
-   
-
+.cookie-consent a {
+    color: #fff;
+    font-weight: 500;
 }
+
+
+.cookie-consent p {
+    font-size: 0.9em;
+    padding-top: 15%;
+    max-width: 800px;
+}
+
+
 
 .send-tilmelding-a {
     background-color: #441d2c;
@@ -1549,23 +1180,21 @@ textarea:focus {
 
 }
 
-/*--------------------- kvittering til FRIVILLIG ansøgning main -------------------------*/
+/*--------------------- KVITTERING FRIVILLIG main -------------------------*/
 .kvittering-frivillig-section1 {
     background-color: #002437;
     width: 100%;
 }
 
-.kvittering-frivillig-s1-billede img {
-    width: 90%;
-    display: block;
+.kvittering-frivillig-s1-content {
+    max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+
 }
 
-.kvittering-frivillig-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
 
 .kvittering-frivillig-s1-tekst {
     width: 100%;
@@ -1602,15 +1231,22 @@ textarea:focus {
     padding-left: 5%;
     padding-top: 10%;
 }
+
 #output-frivillig {
     padding-left: 5%;
-    
+
 }
+
 /*section2*/
 
 .kvittering-frivillig-section2 {
     background-color: #90ad9e;
     width: 100%;
+}
+
+.kvittering-frivillig-s2-content {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -1621,11 +1257,14 @@ textarea:focus {
     color: white;
 }
 
-.kvittering-frivillig-s2-tekst h2 {
+.kvittering-frivillig-section2 h2 {
     font-weight: 500;
     width: 90%;
     display: block;
     margin: 0 auto;
+    color: #fff;
+    padding-top: 5%;
+
 }
 
 .kvittering-frivillig-s2-tekst p {
@@ -1635,6 +1274,7 @@ textarea:focus {
     margin: 0 auto;
     padding-top: 1em;
     text-align: justify;
+    max-width: 800px;
 
 }
 
@@ -1642,6 +1282,7 @@ textarea:focus {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 500px;
 }
 
 .kvittering-frivillig-s2-billede {
@@ -1651,25 +1292,30 @@ textarea:focus {
 }
 
 
-
-
-
-/*------------------------ ansøgning til præsentation main ----------------------------*/
+/*--------------------- ANSØGNING PRÆSENTATION main --------------------------*/
 .ansoegning-section1 {
     background-color: #002437;
     width: 100%;
+}
+
+.ansoegning-s1-content {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
 }
 
 .ansoegning-s1-billede img {
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 .ansoegning-s1-billede {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 2em;
+
 }
 
 .ansoegning-s1-tekst {
@@ -1677,13 +1323,16 @@ textarea:focus {
     padding-top: 2em;
     padding-bottom: 1em;
     color: #fff;
+    max-width: 800px;
 }
 
-.ansoegning-s1-tekst h2 {
+.ansoegning-section1 h2 {
     font-weight: 500;
     width: 90%;
     display: block;
     margin: 0 auto;
+    color: #fff;
+    padding-top: 5%;
 }
 
 .ansoegning-s1-tekst p {
@@ -1707,12 +1356,20 @@ textarea:focus {
     width: 100%;
 }
 
+.kvittering-ansoegning-s2-content {
+    max-width: 1200px;
+}
+
 
 .ansoegning-s2-tekst {
     width: 100%;
     padding-top: 2em;
-    padding-bottom: 1em;
     color: white;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+
+
 }
 
 .ansoegning-s2-tekst h2 {
@@ -1729,10 +1386,9 @@ textarea:focus {
     margin: 0 auto;
     padding-top: 1em;
     text-align: justify;
-
 }
 
-/*----------------------- formular til præsentation start -----------------*/
+/*-formular til præsentation start -*/
 
 
 .ansoegning-formular {
@@ -1742,26 +1398,25 @@ textarea:focus {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-top: 5%;
 }
 
 
 .ansoegning-formular label {
     position: absolute;
     opacity: 0.9;
-    left: 1rem;
     pointer-events: none;
     color: #fff;
-    transition: all .22s;
-    transform: translateY(-50%);
     display: block;
     font-size: 1em;
-   
+    margin: 0 auto;
+    margin-top: -3%;
 }
 
 .ansoegning-formular input {
     width: 100%;
-    padding: 1rem;
-    margin: 1.5rem 0;
+    padding: 1em;
+    margin: 1.5em 0;
     border: none;
     font-size: 0.9em;
 }
@@ -1771,101 +1426,99 @@ textarea:focus {
     outline: 0;
 }
 
+.flex-ansoegning-kontakt-info {
+    display: inline-block;
+    width: 100%;
+}
 
 .ansoegning-formular-navn {
-    max-width: 80rem;
+    max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
+
 .ansoegning-formular-efternavn {
-    max-width: 80rem;
+    max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
 
 .ansoegning-formular-kontakt {
     max-width: 34rem;
     width: 90%;
+    margin: 0 auto;
 }
 
 .ansoegning-formular-info1 {
     max-width: 34rem;
     width: 90%;
-
 }
 
 .ansoegning-formular-info2 {
     max-width: 34rem;
     width: 90%;
-
 }
+
 .ansoegning-formular-info3 {
     max-width: 34rem;
     width: 90%;
-
 }
+
 .ansoegning-formular-info4 {
     max-width: 34rem;
     width: 90%;
-
 }
 
 .infoomdig {
-    padding: 1rem;
-    margin: 1.5rem 0;
+    padding: 1em;
+    margin: 1.5em 0;
     border: none;
     font-size: 0.9em;
     height: 200px !important;
     width: 100%;
-
 }
 
 textarea:focus {
     background: rgb(245, 240, 240);
     outline: 0;
 }
+
+
+
 .ansoegning-formular-tekst {
     font-weight: 300;
-    width: 100%;
+    width: 90%;
     display: block;
     margin: 0 auto;
-    padding-top: 1em;
-    
-}
-.ansoegning-formular-tekst p {
-    padding-bottom: 5%;
-}
-.ansoegning-formular-tekst input {
-    margin-left: 2%;
-
 }
 
 .ansoegning-formular-tekst label {
-    margin-left: 5%;
-    margin-top: -10%;
+    position: relative;
+    opacity: 0.9;
+    pointer-events: none;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: -3%;
+
 }
 
-input.ansoegning-checkbox{
-    width: 17px;
-    height: 17px;
-    margin-left: 20%;
-    
+.ansoegning-formular-tekst input {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
 }
 
-.cookie-consent label {
-    margin-right: 10%;
-    margin-top: 2%;
 
-   
+.cookie-consent a {
+    color: #fff;
+    font-weight: 500;
 }
+
 .cookie-consent p {
     font-size: 0.9em;
-    padding-top: 15%;
-}
-
-#accepter {
-    width: 17px;
-    height: 17px;
-    margin-left: 30%;
-    margin-top: -10%;
 
 }
 
@@ -1884,10 +1537,17 @@ input.ansoegning-checkbox{
 
 
 
-/*--------------------- KVITTERING til præsentations ansøgning main -------------------------*/
+/*--------------------- KVITTERING PRÆSENTATION main -------------------------*/
 .kvittering-ansoegning-section1 {
     background-color: #002437;
     width: 100%;
+}
+
+.kvittering-ansoegning-s1-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 1em;
 }
 
 .kvittering-ansoegning-s1-billede img {
@@ -1914,6 +1574,7 @@ input.ansoegning-checkbox{
     width: 90%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 1em;
 }
 
 .kvittering-ansoegning-s1-tekst p {
@@ -1945,12 +1606,16 @@ input.ansoegning-checkbox{
     width: 100%;
 }
 
+.kvittering-ansoegning-s2-content {
+    max-width: 1000px;
+}
 
 .kvittering-ansoegning-s2-tekst {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 1em;
     color: white;
+    max-width: 700px;
 }
 
 .kvittering-ansoegning-s2-tekst h2 {
@@ -1974,6 +1639,7 @@ input.ansoegning-checkbox{
     width: 90%;
     display: block;
     margin: 0 auto;
+    max-width: 500px;
 }
 
 .kvittering-ansoegning-s2-billede {
@@ -1983,12 +1649,504 @@ input.ansoegning-checkbox{
 }
 
 
-/*--------------------- cookie main -------------------------*/
+/*------------------------ OM OS MAIN ----------------------------*/
+.omos-section1 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s1-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.omos-s1-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s1-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s1-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.omos-s1-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s1-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+}
+
+.omos-s1-tekst a {
+    color: #fff;
+    font-weight: 500;
+}
+
+/*section2*/
+
+.omos-section2 {
+    background-color: #002437;
+    width: 100%;
+
+}
+
+.omos-s2-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+
+}
+
+.omos-s2-liste {
+    color: #fff;
+    width: 100%;
+}
+
+.omos-s2-content p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+.omos-s2-content ul {
+    list-style: none;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.omos-s2-content li {
+    text-align: left;
+    list-style-position: inside;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.omos-s2-content li::before {
+    content: '🌱';
+    margin-right: 10px;
+
+}
+
+.omos-s2-billede img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s2-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+
+.omos-s2-tekst {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    max-width: 800px;
+}
+
+.omos-section2 h2 {
+    font-weight: 500;
+    width:90%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding-top: 1em;
+}
+
+.omos-s2-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section3 er blevet til section8*/
+
+
+/*section4*/
+
+.omos-section4 {
+    background-color: #ded9ca;
+    width: 100%;
+}
+
+.omos-s4-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.omos-s4-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s4-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s4-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #158059;
+    max-width: 800px;
+}
+
+.omos-s4-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s4-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+
+/*section5*/
+
+.omos-section5 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s5-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.omos-s5-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s5-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s5-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+    max-width: 800px;
+}
+
+.omos-s5-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s5-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section6*/
+
+.omos-section6 {
+    background-color: #ded9ca;
+    width: 100%;
+}
+
+.omos-s6-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.omos-s6-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s6-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s6-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #158059;
+    max-width: 800px;
+}
+
+.omos-s6-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s6-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+
+/*section7*/
+
+.omos-section7 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s7-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.omos-s7-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s7-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.omos-s7-tekst {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+    max-width: 800px;
+}
+
+.omos-s7-tekst h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s7-tekst p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+
+}
+
+/*section8*/
+
+.omos-section8 {
+    background-color: #ded9ca;
+    width: 100%;
+}
+
+
+.omos-s8-content {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #158059;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.omos-s8-content h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.omos-s8-content p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+    max-width: 800px;
+
+}
+
+.omos-s8-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.omos-s8-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/*section9*/
+
+.omos-section9 {
+    background-color: #90ad9e;
+    width: 100%;
+}
+
+.omos-s9-content {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.omos-s9-content h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.omos-s9-content p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+    max-width: 800px;
+
+}
+
+.omos-s9-billede img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.omos-s9-billede {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*section10*/
+
+.omos-section10 {
+    background-color: #158059;
+    width: 100%;
+}
+
+.omos-s10-content {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.omos-s10-content h2 {
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.omos-s10-content p {
+    font-weight: 300;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: justify;
+    max-width: 800px;
+
+}
+
+
+/*------------------------- COOKIE main -------------------------*/
 .cookie-section1 {
     background-color: #ded9ca;
     width: 100%;
 }
 
+.cookie-s1-content {
+    padding-top: 20%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .cookie-s1-tekst {
     width: 100%;
@@ -2002,6 +2160,12 @@ input.ansoegning-checkbox{
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.cookie-s1-tekst h3 {
+    font-weight: 500;
+    width: 90%;
+    padding-bottom: 1.3em;
 }
 
 .cookie-s1-tekst p {
@@ -2020,179 +2184,6 @@ input.ansoegning-checkbox{
     margin: 0 auto;
     margin-bottom: -11%;
 }
-
-/*--------------Bannerbillede Kontakt og sponsorer---------------*/
-
-.kontakt-banner {
-    background: url(../images/P9041138.jpg);
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    padding-bottom: 4%;
-    background-repeat: no-repeat;
-    z-index: 10;
-    position: relative; 
-}
-
-.spons-banner {
-    background: url(../images/Untitled-169.jpg);
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    padding-bottom: 4%;
-    background-repeat: no-repeat;
-    z-index: 10;
-    position: relative;  
-}
-
-.logo img {
-    width: 11%;
-    padding-left: 2%;
-}
-
-.logo {
-    margin-top: -38%;
-}
-
-
-/*------------------------main kontakt og sponsorer----------------------------*/
-
-/*section1*/
-
-.kontakt-section1 {
-    background-color: #158059;
-    width: 100%;   
-}
-
-.kontakt-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto; 
-}
-
-.kontakt-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;  
-}
-
-.kontakt-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white; 
-}
-
-.kontakt-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto; 
-}
-
-.kontakt-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: justify; 
-}
-
-
-.spons-section1 {
-    background-color: #158059;
-    width: 100%;  
-}
-
-.spons-s1-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto; 
-}
-
-.spons-s1-billede {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em; 
-}
-
-.spons-s1-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white;  
-}
-
-.spons-s1-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto;   
-}
-
-.spons-s1-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: justify;  
-}
-
-.spons-s1-tekst a, .spons-s2-tekst a {
-    color: #44102C;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/*section2*/
-
-.spons-section2 {
-    background-color: #90ad9e;
-    width: 100%; 
-}
-
-.spons-s2-billede img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.spons-s2-billede {
-    width: 80%;
-    padding-top: 1em;
-    padding-bottom: 2em; 
-    padding-left: 15%;
-}
-
-.spons-s2-tekst {
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    color: white; 
-}
-
-.spons-s2-tekst h2 {
-    font-weight: 500;
-    width: 90%;
-    display: block;
-    margin: 0 auto; 
-}
-
-.spons-s2-tekst p {
-    font-weight: 300;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1em;
-    text-align: justify;
-}
-
 
 
 
@@ -2269,6 +2260,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 12px;
+    padding-bottom: 10%;
 }
 
 .socials a img {
@@ -2291,4 +2283,2506 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 5%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    /*----------------------- UNDERSIDE OM OS 500-700px ---------------------------*/
+
+
+    .omos-s1-billede img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .omos-s1-billede {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .omos-s1-tekst h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .omos-s1-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section2*/
+
+
+
+    .omos-s2-liste {
+        color: #fff;
+        width: 100%;
+    }
+
+    .omos-s2-content p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+
+    .omos-s2-content ul {
+        list-style: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .omos-s2-content li {
+        text-align: left;
+        list-style-position: inside;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+    }
+
+    .omos-s2-content li::before {
+        content: '🌱';
+        margin-right: 10px;
+
+    }
+
+    .omos-s2-billede img {
+        width: 80%;
+    }
+
+    .omos-s2-billede {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+
+    .omos-section2 h2 {
+        font-size: 2em;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    .omos-s2-tekst p {
+
+        width: 80%;
+        font-size: 1.2em;
+
+    }
+
+    /*section3 er blevet til section8, så den findes æk*/
+
+    /*section4*/
+
+
+    .omos-s4-billede img {
+        width: 70%;
+    }
+
+    .omos-s4-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s4-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s4-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+
+    /*section5*/
+
+    .omos-s5-billede img {
+        width: 70%;
+    }
+
+    .omos-s5-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s5-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s5-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section6*/
+
+
+    .omos-s6-billede img {
+        width: 70%;
+    }
+
+    .omos-s6-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s6-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s6-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section7*/
+
+
+    .omos-s7-billede img {
+        width: 70%;
+    }
+
+    .omos-s7-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s7-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s7-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section8*/
+
+
+    .omos-s8-billede img {
+        width: 70%;
+    }
+
+    .omos-s8-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s8-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s8-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section9*/
+
+
+    .omos-s9-billede img {
+        width: 70%;
+    }
+
+    .omos-s9-billede {
+        padding-bottom: 3em;
+    }
+
+    .omos-s9-tekst h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .omos-s9-tekst p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    /*section10*/
+
+
+    .omos-s10-content h2 {
+        font-size: 2em;
+    }
+
+    .omos-s10-content p {
+        font-size: 1.2em;
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+    /*------------------ UNDERSIDE NÆSTE EVENT  600-800px-------------------*/
+    .events-section1 h2 {
+        font-size: 2.1em;
+        padding-top: 5%;
+        float: center;
+        padding-left: 10%;
+    }
+
+    .events-s1-billede img {
+        width: 60%;
+        max-height: 500px;
+    }
+
+
+    .events-s1-tekst {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    /*section2*/
+
+
+    .events-s2-billede img {
+        width: 70%;
+    }
+
+
+    .events-s2-tekst {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .events-s2-tekst h2 {
+        font-size: 1.7em;
+        padding-bottom: 2%;
+    }
+
+    /*section3 er blevet til section8, så der er ingen section3*/
+
+    /*section4*/
+    .events-s4-billede img {
+        width: 70%;
+    }
+
+    .events-s4-tekst {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+
+
+    /*section5*/
+
+    .events-s5-tekst {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+
+    /*section6*/
+
+    .events-s6-billede img {
+        display: none;
+    }
+
+    .events-s6-tekst p {
+        display: none;
+    }
+
+    .events-s6-tekst h2 {
+        width: 80%;
+    }
+
+    /*  program start - */
+
+    .program_event {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content_program p {
+        font-size: 1.2em;
+    }
+
+    .program_event::after {
+        left: 76px;
+    }
+
+    .container_program {
+        width: 94%;
+        padding-left: 110px;
+        padding-right: 25px;
+    }
+
+    .right::after {
+        left: 60px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    /* program SLUT */
+
+
+    /*section7*/
+
+
+    .events-s7-tekst {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 60%;
+        position: relative;
+        height: 0;
+        margin: 4%
+    }
+
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    /*--------------------- UNDERSIDE FRIVILLIG 600-800px------------------------*/
+
+
+    .frivillig-s1-billede img {
+        width: 80%;
+        padding-bottom: 5%;
+    }
+
+
+    .frivillig-s1-tekst {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    /*section2*/
+
+
+    .frivillig-s2-tekst p {
+        font-size: 1.2em;
+        padding-bottom: 2%;
+    }
+
+    /* ansøg til frivillige formular start */
+    .frivillig-formular {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .frivillig-formular label {
+        position: relative;
+        left: 0rem;
+        margin-bottom: -7%;
+        padding-top: 3%;
+    }
+
+    .frivillig-formular input {
+        width: 100%;
+    }
+
+    .flex-frivillig-kontakt-info {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .flex-frivillig-kontakt-info input {
+        width: 100%;
+    }
+
+    .frivillig-formular-navn {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .frivillig-formular-kontakt {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .frivillig-formular-info {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .frivillig-formular-tekst {
+        font-weight: 300;
+        width: 90%;
+        display: block;
+        padding-top: 1em;
+    }
+
+    /*------------- UNDERSIDE KVITTERING/FRIVILLIG 600-800px---------------*/
+
+    .kvittering-frivillig-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-frivillig-s1-tekst {
+        width: 90%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    /*section2*/
+
+    .kvittering-frivillig-s2-tekst {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: white;
+    }
+
+
+    .kvittering-frivillig-s2-tekst p {
+        font-size: 1.1em;
+
+    }
+
+    .kvittering-frivillig-s2-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    /* --------- ANSØGNING TIL PRÆSENTATION 600-800px------- */
+
+    .ansoegning-s1-billede img {
+        width: 80%;
+
+    }
+
+    .ansoegning-s1-tekst {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.1em;
+        line-height: 1.6;
+        max-width: 1000px;
+    }
+
+    .ansoegning-section1 h2 {
+        padding-bottom: 2%;
+        width: 80%;
+    }
+
+    /*section2*/
+    .ansoegning-s2-tekst h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .ansoegning-s2-tekst p {
+        padding-bottom: 2%;
+        font-size: 1.2em;
+    }
+
+    /*formular til præsentation start*/
+
+
+    .ansoegning-formular label {
+        position: relative;
+        opacity: 0.9;
+        pointer-events: none;
+        color: #fff;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+
+    .flex-ansoegning-kontakt-info {
+        display: inline-block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-navn {
+        max-width: 34rem;
+        width: 100%;
+    }
+
+    .ansoegning-formular-kontakt {
+        max-width: 34rem;
+        width: 100%;
+    }
+
+    .infoomdig {
+        max-width: 34rem;
+        width: 100%;
+    }
+
+
+    .ansoegning-formular-tekst label {
+        width: 80%;
+
+    }
+
+    .ansoegning-formular-tekst input {
+        max-width: 34rem;
+        width: 90%;
+        padding-left: 10%;
+        margin: 0 auto;
+
+    }
+
+    /*----------------- UNDERSIDE KVITTERING/ANSØGNING 600-800px -----------------*/
+
+    .kvittering-ansoegning-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-ansoegning-s1-tekst {
+        width: 90%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    /*section2*/
+
+    .kvittering-ansoegning-s2-tekst {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: white;
+    }
+
+
+    .kvittering-ansoegning-s2-tekst p {
+        font-size: 1.1em;
+
+    }
+
+    .kvittering-ansoegning-s2-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+
+    /*------------------------ UNDERSIDE OM OS 700-1000px----------------------*/
+    .omos-s1-flex .omos-s1-content {
+        display: flex;
+    }
+
+    .omos-s1-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .omos-s1-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .omos-s1-billede {
+        width: 50%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .omos-s1-tekst {
+        width: 50%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+    }
+
+    .omos-s1-tekst h2 {
+        font-size: 1.7em;
+    }
+
+
+    /*section2*/
+
+    .omos-s2-content {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .omos-s2-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .omos-s2-liste {
+        color: #fff;
+        width: 45%;
+        margin-top: 50px;
+       
+    }
+
+    .omos-s2-content p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+
+    .omos-s2-content ul {
+        list-style: none;
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 1.4em;
+    }
+
+    .omos-s2-content li {
+        text-align: left;
+        list-style-position: inside;
+        margin-bottom: 10px;
+        margin-top: 30px;
+
+    }
+
+    .omos-s2-content li::before {
+        content: '🌱';
+        margin-right: 15px;
+
+    }
+
+    .omos-s2-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .omos-s2-billede {
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .omos-s2-tekst {
+        width: 50%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+    }
+
+    .omos-section2 h2 {
+        font-size: 2em;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+
+    /*section3 er blevet til section8*/
+
+
+    /*section4*/
+    .omos-s4-flex {
+        display: flex;
+    }
+
+    .omos-s4-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s4-billede img {
+        width: 70%;
+    }
+
+    .omos-s4-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s4-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s4-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s4-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+
+    /*section5*/
+
+    .omos-s5-flex {
+        display: flex;
+    }
+
+    .omos-s5-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s5-billede img {
+        width: 70%;
+    }
+
+    .omos-s5-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s5-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s5-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s5-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    /*section6*/
+
+    .omos-s6-flex {
+        display: flex;
+    }
+
+    .omos-s6-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s6-billede img {
+        width: 70%;
+    }
+
+    .omos-s6-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s6-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s6-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s6-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    /*section7*/
+
+    .omos-s7-flex {
+        display: flex;
+    }
+
+    .omos-s7-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s7-billede img {
+        width: 70%;
+    }
+
+    .omos-s7-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s7-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s7-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s7-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    /*section8*/
+
+    .omos-s8-flex {
+        display: flex;
+    }
+
+    .omos-s8-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s8-billede img {
+        width: 70%;
+    }
+
+    .omos-s8-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s8-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s8-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s8-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    /*section9*/
+
+    .omos-s9-flex {
+        display: flex;
+    }
+
+    .omos-s9-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s9-billede img {
+        width: 70%;
+    }
+
+    .omos-s9-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s9-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s9-tekst h2 {
+        font-size: 1.4em;
+    }
+
+    .omos-s9-tekst p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    /*section10*/
+
+    .omos-section10 {
+        background-color: #158059;
+        width: 100%;
+    }
+
+    .omos-s10-content {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .omos-s10-content h2 {
+        font-weight: 500;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .omos-s10-content p {
+        font-weight: 300;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1em;
+        text-align: justify;
+        max-width: 800px;
+
+    }
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    /*------------------------ UNDERSIDE NÆSTE EVENT 800-1000px---------------------*/
+
+
+    .events-section1 h2 {
+        font-weight: 500;
+        width: 100%;
+        font-size: 2em;
+        padding-top: 5%;
+        color: #fff;
+        float: center;
+    }
+
+    .events-s1-flex {
+        display: flex;
+
+    }
+
+    .events-s1-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .events-s1-billede img {
+        width: 70%;
+        max-height: 500px;
+        padding-top: 3%;
+
+    }
+
+    .events-s1-billede {
+        width: 50%;
+
+    }
+
+    .events-s1-tekst {
+        font-size: 1.2em;
+        padding-left: 3%;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    .events-s1-tekst h2 {
+        font-size: 2.4em;
+
+    }
+
+
+    .events-s1-tekst p {
+        padding-bottom: 1em;
+    }
+
+
+    /*section2*/
+    .events-section2 h2 {
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+    .events-s2-flex {
+        display: flex;
+    }
+
+    .events-s2-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .events-s2-billede img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .events-s2-billede {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .events-s2-tekst {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 3em;
+        margin: 0 auto;
+    }
+
+    /*section3 er blevet til section8*/
+
+    /*section4*/
+
+    .events-section4 h2 {
+        font-size: 2em;
+        padding-left: 5%;
+    }
+
+    .events-s4-flex {
+        display: flex;
+    }
+
+    .events-s4-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .events-s4-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .events-s4-billede {
+        width: 45%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .events-s4-tekst {
+        width: 50%;
+        padding-bottom: 3em;
+        font-size: 1em;
+
+    }
+
+
+    .events-s4-tekst p {
+        font-weight: 300;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1em;
+        text-align: justify;
+
+    }
+
+    /*section5*/
+    .events-s5-tekst {
+        font-size: 1em;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+
+    /*section6*/
+
+    .events-s6-flex {
+        display: flex;
+    }
+
+    .events-s6-billede img {
+        width: 100%;
+    }
+
+    .events-s6-billede {
+        display: none
+    }
+
+    .events-s6-tekst h2 {
+        font-weight: 500;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* ---- program for event (section6) ---- */
+
+    .events-s6-tekst p {
+        display: none;
+    }
+
+    .program_event {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content_program p {
+        font-size: 1.2em;
+    }
+
+    .program_event::after {
+        left: 76px;
+    }
+
+    .container_program {
+        width: 94%;
+        padding-left: 110px;
+        padding-right: 25px;
+    }
+
+    .right::after {
+        left: 60px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    /*section7*/
+
+    .events-section7 {
+        background-color: #ded9ca;
+        width: 100%;
+    }
+
+
+    .events-s7-tekst {
+        width: 90%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: #158059;
+        margin: 0 auto;
+    }
+
+    .events-s7-tekst a {
+        color: #158059;
+        font-weight: 600;
+
+    }
+
+    .events-s7-tekst h2 {
+        font-weight: 500;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .events-s7-tekst p {
+        font-weight: 300;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1em;
+        text-align: justify;
+
+    }
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 60%;
+        position: relative;
+        height: 0;
+        margin: 4%
+    }
+
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    /*---------------------- UNDERSIDE FRIVILLIG 800-1000px ------------------*/
+
+    .frivillig-s2-flex {
+        display: flex;
+    }
+
+    .frivillig-s1-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frivillig-s1-billede img {
+        width: 90%;
+    }
+
+    .frivillig-s1-billede {
+        width: 40%;
+        padding-top: 5em;
+        padding-bottom: 2em;
+        padding-right: 3%;
+    }
+
+    .frivillig-s1-tekst {
+        width: 60%;
+        padding-left: 3%;
+        padding-bottom: 2em;
+        font-size: 1.1em;
+    }
+
+    .frivillig-s1-tekst h2 {
+        width: 90%;
+        font-size: 1.6em;
+    }
+
+    /*section2*/
+
+
+
+    .frivillig-s2-tekst p {
+        font-size: 1.2em;
+
+    }
+
+    /*-ansøg til frivillige formular start */
+
+
+    .frivillig-formular {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .frivillig-formular label {
+        display: inline-block;
+        line-height: 0.9em;
+
+    }
+
+    .frivillig-formular input {
+        width: 100%;
+        border: none;
+        font-size: 0.9em;
+    }
+
+    .flex-frivillig-kontakt-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .frivillig-formular-navn {
+        max-width: 34rem;
+        width: 35%;
+
+    }
+
+    .frivillig-formular-efternavn {
+        max-width: 34rem;
+        width: 40%;
+    }
+
+    .frivillig-formular-kontakt {
+        max-width: 34rem;
+        width: 45%;
+        padding-top: 3%;
+
+    }
+
+    .frivillig-formular-info {
+        max-width: 90rem;
+        width: 90%;
+    }
+
+    .frivillig-formular-tekst p {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+
+    .cookie-consent p {
+        font-size: 0.9em;
+        padding-top: 5%;
+    }
+
+    /*---------------- UNDERSIDE KVITTERING/FRIVILLIG 800-1000px----------------*/
+
+
+    .kvittering-frivillig-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-frivillig-s1-tekst {
+        width: 90%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+
+    /*section2*/
+    .kvittering-frivillig-s2-flex {
+        display: flex;
+    }
+
+    .kvittering-frivillig-s2-content {
+        display: flex;
+    }
+
+    .kvittering-frivillig-s2-tekst {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: white;
+    }
+
+
+    .kvittering-frivillig-s2-billede img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kvittering-frivillig-s2-billede {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+
+    /* ----------  UNDERSIDE ANSØGNING TIL PRÆSENTATION 800-1000px------- */
+
+    .ansoegning-section1 {
+        width: 100%;
+    }
+
+    .ansoegning-s1-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ansoegning-s1-flex {
+        display: flex;
+    }
+
+    .ansoegning-s1-billede img {
+        width: 100%;
+    }
+
+    .ansoegning-s1-billede {
+        width: 47%;
+        padding-left: 5%;
+    }
+
+
+    .ansoegning-s1-tekst h2 {
+        font-weight: 500;
+        width: 92%;
+        font-size: 2em;
+        padding-bottom: 2%;
+
+    }
+
+    .ansoegning-s1-tekst {
+        width: 50%;
+        padding-bottom: 3em;
+        padding-left: 2%;
+        font-size: 1.1em;
+    }
+
+
+    /*section2*/
+
+
+    .ansoegning-s2-tekst {
+        font-size: 1.1em;
+        padding: 5% 2% 0% 2%;
+
+    }
+
+    .ansoegning-s2-tekst h2 {
+        font-size: 2.1em;
+    }
+
+    .ansoegning-s2-tekst p {
+        padding-bottom: 5%;
+    }
+
+    /* formular til præsentation start */
+
+
+
+    .ansoegning-formular label {
+        position: relative;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+
+    .flex-ansoegning-kontakt-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-navn {
+        width: 45%;
+        padding-left: 3%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-kontakt {
+        padding-top: 3%;
+        padding-right: 3%;
+        width: 47%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-info1 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info2 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info3 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info4 {
+        max-width: 100%;
+        width: 90%;
+
+    }
+
+    .ansoegning-formular-tekst {
+        width: 90%;
+    }
+
+
+    /*--------------- UNDERSIDE KVITTERING/ANSOEGNING 800-1000px--------------*/
+
+
+    .kvittering-ansoegning-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-ansoegning-s1-tekst {
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+
+    /*section2*/
+    .kvittering-ansoegning-s2-flex {
+        display: flex;
+    }
+
+    .kvittering-ansoegning-s2-content {
+        display: flex;
+    }
+
+    .kvittering-ansoegning-s2-tekst {
+        width: 90%;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        padding-left: 3%;
+        color: white;
+    }
+
+    .kvittering-ansoegning-s2-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-s2-billede {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    /*------------------------ UNDERSIDE NÆSTE EVENT >1000px ---------------------*/
+    .events-section1 h2 {
+        font-weight: 500;
+        width: 100%;
+        font-size: 2em;
+        padding-top: 5%;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .events-s1-flex {
+        display: flex;
+
+    }
+
+    .events-s1-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .events-s1-billede img {
+        width: 70%;
+        max-height: 500px;
+        padding-top: 3%;
+
+    }
+
+    .events-s1-billede {
+        width: 40%;
+
+    }
+
+    .events-s1-tekst {
+        font-size: 1.2em;
+        padding-left: 3%;
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .events-s1-tekst h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+
+    .events-s1-tekst p {
+        padding-bottom: 1em;
+    }
+
+
+    /*section2*/
+    .events-section2 h2 {
+        font-size: 2.1em;
+    }
+
+    .events-s2-flex {
+        display: flex;
+
+    }
+
+    .events-s2-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .events-s2-billede img {
+        width: 80%;
+        padding-bottom: 10%;
+    }
+
+    .events-s2-billede {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .events-s2-tekst {
+        width: 50%;
+        padding-top: 2em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    /*section3 er blevet til section8*/
+
+    /*section4*/
+
+    .events-section4 h2 {
+        font-size: 2.1em;
+        padding-left: 5%;
+    }
+
+    .events-s4-flex {
+        display: flex;
+    }
+
+    .events-s4-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .events-s4-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .events-s4-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .events-s4-tekst {
+        width: 50%;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+    }
+
+
+    /*section5*/
+    .events-section5 h2 {
+        font-size: 2.1em;
+    }
+
+    .events-s5-tekst {
+        font-size: 1.2em;
+    }
+
+    /*section6*/
+
+    .events-s6-flex {
+        display: flex;
+    }
+
+    .events-section6 {
+        padding-bottom: 4em;
+
+    }
+
+    .events-section6 h2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.2em;
+    }
+
+
+    .events-s6-billede {
+        display: none
+    }
+
+    /*timeline*/
+    .events-s6-tekst p {
+        display: none;
+    }
+
+    .program_event {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    .content_program p {
+        font-size: 1.2em;
+    }
+
+    .program_event::after {
+        left: 76px;
+    }
+
+    .container_program {
+        width: 92%;
+        padding-left: 110px;
+        padding-right: 25px;
+    }
+
+    .right::after {
+        left: 60px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    /* program SLUT */
+
+
+    /*section7*/
+    .events-section7 {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .events-section7 h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .events-s7-tekst {
+        font-size: 1.1em;
+    }
+
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 60%;
+        position: relative;
+        height: 0;
+        margin: 4%;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        margin-top: 2em;
+
+    }
+
+
+    .map-responsive iframe {
+        margin: 0 auto;
+    }
+
+    /*-----------UNDERSIDE ANSØGNING/FRIVILLIG  >1000px -----------------*/
+
+    .frivillig-s1-flex {
+        display: flex;
+    }
+
+    .frivillig-s1-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frivillig-s1-billede img {
+        width: 90%;
+    }
+
+    .frivillig-s1-billede {
+        width: 40%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding-right: 3%;
+    }
+
+    .frivillig-s1-tekst {
+        width: 60%;
+        padding-left: 3%;
+        padding-bottom: 2em;
+        font-size: 1.1em;
+    }
+
+    .frivillig-s1-tekst h2 {
+        width: 90%;
+        font-size: 1.7em;
+    }
+
+    /*section2*/
+
+
+    .frivillig-s2-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+
+    .frivillig-s2-tekst p {
+        margin: 0 auto;
+        font-size: 1.1em;
+        max-width: 800px;
+    }
+
+    .frivillig-s2-tekst h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+
+    .flex-frivillig-kontakt-info {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+
+    .frivillig-formular-navn {
+        max-width: 34rem;
+        width: 40%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+
+    .frivillig-formular-kontakt {
+        max-width: 34rem;
+        width: 40%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .frivillig-formular-info {
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .frivillig-formular-tekst {
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+
+    /*---------------- UNDERSIDE KVITTERING/FRIVILLIG >1000px------------------*/
+
+
+    .kvittering-frivillig-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-frivillig-s1-tekst {
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    .kvittering-frivillig-section1 h2 {
+
+        font-size: 2.4em;
+        margin: 0 auto;
+    }
+
+    /*section2*/
+    .kvittering-frivillig-s2-content {
+        margin: 0 auto;
+    }
+
+    .kvittering-frivillig-s2-flex {
+        display: flex;
+    }
+
+    .kvittering-frivillig-s2-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kvittering-frivillig-section2 h2 {
+        font-size: 2.4em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .kvittering-frivillig-s2-tekst {
+        width: 50%;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    .kvittering-frivillig-s2-billede img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kvittering-frivillig-s2-billede {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* -------------  UNDERSIDE ANSØGNING TIL PRÆSENTATION >1000px ------------- */
+
+    .ansoegning-section1 {
+        width: 100%;
+    }
+
+    .ansoegning-s1-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ansoegning-s1-flex {
+        display: flex;
+    }
+
+
+    .ansoegning-s1-billede {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+
+    .ansoegning-section1 h2 {
+        font-weight: 500;
+        width: 92%;
+        font-size: 2.4em;
+        padding-bottom: 2%;
+        text-align: center;
+
+    }
+
+    .ansoegning-s1-tekst {
+        width: 45%;
+        padding-bottom: 3em;
+        padding-left: 2%;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+
+    /*section2*/
+    .ansoegning-section2 h2 {
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+    .ansoegning-s2-tekst {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 5% 2% 0% 2%;
+
+    }
+
+    .ansoegning-s2-tekst p {
+        padding-bottom: 5%;
+        font-size: 1.1em;
+    }
+
+    /* formular til præsentation start */
+
+
+
+    .ansoegning-formular label {
+        position: relative;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+
+    .flex-ansoegning-kontakt-info {
+        display: flex;
+        flex-direction: row;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-navn {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-kontakt {
+        padding-top: 3%;
+        width: 45%;
+        padding-left: 2%;
+        margin: 0 auto;
+    }
+
+    .ansoegning-formular-info1 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info2 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info3 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .ansoegning-formular-info4 {
+        max-width: 100%;
+        width: 90%;
+
+    }
+
+    .ansoegning-formular-tekst {
+        width: 90%;
+    }
+
+    .ansoegning-formular-tekst label {
+        width: 60%;
+        float: left;
+        padding-bottom: 2%;
+    }
+
+    /*--------------- UNDERSIDE KVITTERING/ANSOEGNING >1000px -------------------*/
+
+
+    .kvittering-ansoegning-section1 {
+        width: 100%;
+
+    }
+
+    .kvittering-ansoegning-s1-tekst {
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-section1 h2 {
+
+        font-size: 2.4em;
+        margin: 0 auto;
+    }
+
+    /*section2*/
+    .kvittering-ansoegning-s2-content {
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-s2-flex {
+        display: flex;
+    }
+
+    .kvittering-ansoegning-s2-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kvittering-ansoegning-section h2 {
+
+        font-size: 2.4em;
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-s2-tekst {
+        width: 40%;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-s2-billede img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kvittering-ansoegning-s2-billede {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    /*------------------------ UNDERSIDE OM OS >1000px ----------------------------*/
+    .omos-s1-flex .omos-s1-content {
+        display: flex;
+    }
+
+    .omos-s1-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .omos-s1-billede img {
+        width: 65%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .omos-s1-billede {
+        width: 50%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        margin: 0 auto;
+    }
+
+    .omos-s1-tekst {
+        width: 50%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s1-tekst h2 {
+        font-size: 2.4em;
+    }
+
+
+    /*section2*/
+
+    .omos-s2-content {
+        display: flex;
+    }
+
+    .omos-s2-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .omos-s2-liste {
+        color: #fff;
+        width: 50%;
+        margin-top: 50px;
+       
+    }
+
+    .omos-s2-liste p{
+        color: #fff;
+        width: 50%;
+        margin: 0 auto;
+        text-align: justify;
+       
+    }
+
+
+    .omos-s2-content p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+
+    .omos-s2-content ul {
+        list-style: none;
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 1.4em;
+    }
+
+    .omos-s2-content li {
+        text-align: left;
+        list-style-position: inside;
+        margin-bottom: 10px;
+        margin-top: 30px;
+
+    }
+
+    .omos-s2-content li::before {
+        content: '🌱';
+        margin-right: 15px;
+
+    }
+
+    .omos-s2-billede img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    .omos-s2-billede img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .omos-s2-billede {
+        width: 80%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .omos-s2-tekst {
+        width: 50%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+    }
+
+    .omos-section2 h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    /*section3 er blevet til section8*/
+
+
+    /*section4*/
+    .omos-s4-flex {
+        display: flex;
+    }
+
+    .omos-s4-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s4-billede img {
+        width: 70%;
+    }
+
+    .omos-s4-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s4-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s4-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s4-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+
+    /*section5*/
+
+    .omos-s5-flex {
+        display: flex;
+    }
+
+    .omos-s5-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s5-billede img {
+        width: 70%;
+    }
+
+    .omos-s5-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s5-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s5-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s5-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    /*section6*/
+
+    .omos-s6-flex {
+        display: flex;
+    }
+
+    .omos-s6-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s6-billede img {
+        width: 70%;
+    }
+
+    .omos-s6-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s6-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s6-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s6-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    /*section7*/
+
+    .omos-s7-flex {
+        display: flex;
+    }
+
+    .omos-s7-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s7-billede img {
+        width: 70%;
+    }
+
+    .omos-s7-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s7-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s7-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s7-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    /*section8*/
+
+    .omos-s8-flex {
+        display: flex;
+    }
+
+    .omos-s8-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .omos-s8-billede img {
+        width: 70%;
+    }
+
+    .omos-s8-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s8-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s8-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s8-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    /*section9*/
+
+    .omos-s9-flex {
+        display: flex;
+    }
+
+    .omos-s9-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .omos-s9-billede img {
+        width: 70%;
+    }
+
+    .omos-s9-billede {
+        width: 45%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+
+    .omos-s9-tekst {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .omos-s9-tekst h2 {
+        font-size: 1.6em;
+    }
+
+    .omos-s9-tekst p {
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    /*section10*/
+
+
+
+    .omos-s10-content h2 {
+        font-size: 1.9em;
+    }
+
+    .omos-s10-content p {
+        font-size: 1.1em;
+
+    }
 }
